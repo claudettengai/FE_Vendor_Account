@@ -14,6 +14,7 @@
 <body>
 
 
+
 <!-- //////////////////////////// HEADER ////////////////////////// 
 /////////////////////////////////////////////////////////////////////////-->
 
@@ -22,25 +23,31 @@ How do I make the little upside down triangle that indicates a dropdown?  -->
 
 	<header> 
 
-		<!-- **** global nav top -->
-		<nav class= "global_nav">
-			<a href= "#" class="logo"><img class= "FE_logo" src= "img/FE_logo"></a>
-			<a href="#">Dashboard</a>
-			<a href = "#">Orders</a>
-			<a href= "#">FAQ</a>
-			<a href= "#">Leah Rey</a> 
+		<!-- ****  nav very top -->
+		<nav class= "top_nav">
+			<ul>
+				<li id= "FE_logo"><a href= "#" class="logo"><img src= "img/FE_logo"></a></li>
+				<li id= "Dash_btn"><a href="#">Dashboard</a></li>
+				<li id= "Orders_btn"><a href = "#">Orders</a></li>
+				<li id= "FAQ"><a href= "#">FAQ</a></li>
+				<li id= "User"><a href= "#">Leah Rey</a></li>
+			</ul>
 		</nav>
 
 		<!-- ****  Title and text -->
-		<h1><span class= "Step2">Step 2 : </span>Product Profile</h1>
-		<h3>Just 2 more steps to go!</h3>
+		<div id= "title_text">
+			<h1><span class= "Step2">Step 2 : </span>Product Profile</h1>
+			<h3>Just 2 more steps to go!</h3>
+	</div>
 
 		<!-- **** progress bar -->
-		<nav class= "progress_bar">
-			<a href= "#" class= "completed_steps">Company</a>
-			<a href= "#" class="completed_steps"><span class= "Products_tab">Products</span></a> 
-			<a href= "#" class= "uncomplete_steps">Users</a>
-			<a href= "#" class= "uncomplete_steps">Payment</a>
+		<nav>
+			<ul class= "progress_bar">
+				<li><a href= "#" class= "completed_tab">Company</a></li>
+				<li><a href= "#" class="completed_tab"><span class= "Products_tab">Products</span></a></li>
+				<li><a href= "#" class= "incomplete_tab">Users</a></li>
+				<li><a href= "#" class= "incomplete_tab">Payment</a></li>
+			</ul>
 		</nav>
 
 	</header>
@@ -84,17 +91,63 @@ How do I make the little upside down triangle that indicates a dropdown?  -->
 	<div class= "main_content"> 
 
 		<div class ="main_container"> 
+			<!-- contains all content (except panel) under banner  -->
+
+			<img id= "banner photo" src= "img/preserving-sf-banner.png">
 
 			<!-- COME BACK TO THIS ++ fill in company info!! -->
 			<div class= "company_info"> 
-			</div> 
+				<!-- This container starts with logo and ends with text - it has a negative right margin  -->
+
+
+				<!-- logo and social block -->
+				<div class= "logo_and_social">
+					<img id= "preserving_sf_logo" src = "img/preserving_sf_logo.png">
+					<div class= "social_row">
+						<ul>
+							<li><a href= "#"><img src= "img/facebook-grey.png"></a></li>
+							<li><a href= "#"><img src = "img/pinterest-grey.png"></a></li>
+							<li><a href= "#"><img src= "img/twitter-grey.png"></a></li>
+						</ul>
+					</div>
+				</div> 
+
+
+				<!-- Company Name and Location -->
+				<div class= "co_name_location">
+					<h2>Preserving SF</h2>
+					<h6>San Francisco, CA</h6>
+				</div>
+
+
+			<!-- Description and Product/Gallery Tabs -->
+			<div class = "prod_gall_descript">
+				<div class= "prod_gall_tabs">
+					<ul>
+						<li><h5 class"14_and_10_bold">4 <span class = "10_bold">Products</span></h5></li>
+						<li><h5 class= "14_and_10_bold">3 <span class= "10_bold">Gallery Items</span></h5></li>
+					</ul>
+					<div id= "description">
+						<p>At Preserving SF, we strive to capture not only the flavor of our perfectly ripened fruits, but also the purity, love and care that went into every step of the process from...<span class= "green">&#40;more&#41;</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
 
 
 
 			<!-- ****INDIVIDUAL PRODUCTS -->
+				<!-- Ask Chris: 
+				When do I put lists into divs or keep them as uls?  -->
+
+
 			<div class= "product_list">
 
-				<h5><strong>6 ITEMS  |  </strong>SORT BY : BESTSELLERS</h5>
+				<h5><strong>6 ITEMS  |  </strong>Drag to arrange the order of live items</h5>
 				<!-- still figuring out how to configure this heading -->	
 				<!-- also do I want to make sort by a dropdown? --> 			
 
@@ -125,22 +178,28 @@ How do I make the little upside down triangle that indicates a dropdown?  -->
 						<h6>Preserving SF</h6>
 
 						<ul class= "variant_list">
-							<li><ul class= "variant_row_1">
-								<li class= "Size">8 oz. jar</li>
-								<li class= "Price">$12.00</li>
-							</ul></li>
+							<li>
+								<ul class= "variant_row_1">
+									<li class= "Size">8 oz. jar</li>
+									<li class= "Price">$12.00</li>
+								</ul>
+							</li>
 
 
-							<li><ul class= "variant_row_2">
-								<li class= "Size">12 oz. jar</li>
-								<li class = "DRAFT">DRAFT</li>
+							<li>
+								<ul class= "variant_row_2">
+									<li class= "Size">12 oz. jar</li>
+									<li class = "DRAFT">DRAFT</li>
 								<li class= "Price">$0.00</li>
-							</ul></li>
+								</ul>
+							</li>
 
-							<li><ul class= "variant_row_3">
-								<li class= "Size">16 oz. jar</li>
-								<li class= "Price">$20.00</li>
-							</ul></li>
+							<li>
+								<ul class= "variant_row_3">
+									<li class= "Size">16 oz. jar</li>
+									<li class= "Price">$20.00</li>
+								</ul>
+							</li>
 						</ul>	
 					</li>
 
@@ -149,14 +208,142 @@ How do I make the little upside down triangle that indicates a dropdown?  -->
 					<li class= "block3">
 
 						<img src= "img/product3.jpg">
-						<h5>Springtime Blueberry Jam</h5>
+						<h5>Raspberry Jam</h5>
 						<h6>Preserving SF</h6>
 
 						<ul class= "variant_list">
-							<li><ul class= "variant_row_1">
-								<li class= "Size">8 oz. jar</li>
+							<li>
+								<ul class= "variant_row_1">
+									<li class= "green Price">$12.00</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+
+
+					<!-- **** Product 4 -->
+					<li class= "block4">
+
+						<img src= "img/product4.jpg">
+						<h5>Grape Jam</h5>
+						<h6>Preserving SF</h6>
+
+						<ul class= "variant_list">
+							<li>
+								<ul class= "variant_row_1">
+									<li class= "Size">8 oz. jar</li>
+									<li class= "Price">$12.00</li>
+								</ul>
+							</li>
+
+
+							<li>
+								<ul class= "variant_row_2">
+									<li class= "Size">12 oz. jar</li>
+									<li class = "DRAFT">DRAFT</li>
+								<li class= "Price">$0.00</li>
+								</ul>
+							</li>
+
+							<li>
+								<ul class= "variant_row_3">
+									<li class= "Size">16 oz. jar</li>
+									<li class= "Price">$20.00</li>
+								</ul>
+							</li>
+						</ul>	
+					</li>
+
+
+
+					<!-- **** Product 5 -->
+					<li class= "block5">
+
+						<img src= "img/product5.jpg">
+						<h5>Pomegranate Jam</h5>
+						<h6>Preserving SF</h6>
+
+						<ul class= "variant_list">
+							<li>
+								<ul class= "variant_row_1">
+									<li class= "DRAFT">DRAFT</li>
+									<li class= "green Price">$12.00</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+					<!-- **** Product 6 -->
+					<li class= "block6">
+
+						<img src= "img/product6.jpg">
+						<h5>Pineapple Preserves</h5>
+						<h6>Preserving SF</h6>
+
+						<ul class= "variant_list">
+							<li>
+								<ul class= "variant_row_1">
+									<li class= "Size">8 oz. jar</li>
+									<li class= "DRAFT">DRAFT</li>
+									<li class= "Price">$0.00</li>
+								</ul>
+							</li>
+
+
+							<li>
+								<ul class= "variant_row_2">
+									<li class= "Size">12 oz. jar</li>
+									<li class = "DRAFT">DRAFT</li>
 								<li class= "Price">$12.00</li>
-							</ul></li>
+								</ul>
+							</li>
+						</ul>	
+					</li>
+
+					<!-- **** Product 7 -->
+					<li class= "block7">
+
+						<img src= "img/product7.jpg">
+						<h5>Table Water Crackers</h5>
+						<h6>Preserving SF</h6>
+
+						<ul class= "variant_list">
+							<li>
+								<ul class= "variant_row_1">
+									<li class= "green Price">$10.00</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+					<!-- **** Add Product -->
+					<li class= "Add_Block">
+						<img src="img/add-product-block.png">
+					</li>
+
+				</ul> <!-- individual products -->
+			</div> <!-- product container -->
+		</div> <!-- main container -->
+	</div> <!-- main content -->
+
+
+
+
+
+
+<!-- //////////////////////////// FOOTER ////////////////////////// 
+/////////////////////////////////////////////////////////////////////////-->
+
+
+
+	<div class= "footer">
+		<div id= "green_bar"></div>
+		<div id= "dark_green_bar"></div>
+	</div>
 
 
 
