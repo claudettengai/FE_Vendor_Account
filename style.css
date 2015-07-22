@@ -12,8 +12,31 @@ body{
 
 }
 
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
 
+/*GRID*/
 
+.full-width {
+	width: 100%;
+	border: 1px solid red;
+}
+
+.left-rail {
+	width: 75%;
+	float: left;
+	border: 1px solid red;
+
+}
+
+.right-rail {
+	width: 20%;
+	float: right;
+	border: 1px solid red;
+
+}
 
 /*//////////////////////////// HEADER ////////////////////////// 
 /////////////////////////////////////////////////////////////////////////*/
@@ -45,10 +68,14 @@ body{
 
 }
 
+a#FE_logo {
+	width: 50px;
+	float: left;
 
+}
 
 #FE_logo img{
-	width: 50px;
+	width: 100%;
 }
 
 .top_nav a{
