@@ -10,88 +10,76 @@
 
 
 
-
 <body>
 
 
 
-<!-- //////////////////////////// HEADER ////////////////////////// 
-/////////////////////////////////////////////////////////////////////////-->
+<!-- * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * 
+	* * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
 
-<!-- Ask Chris: 
-How do I make the little upside down triangle that indicates a dropdown?  -->
 
 	<header> 
 
 		<!-- ****  nav very top -->
-		<nav class= "top_nav full-width">
+		<nav class= "top_nav full-width HelveticaNeueMedium">
+
 			<div class="container">
-			<a href= "#" id="FE_logo " class="logo"><img src= "img/FE_logo"></a>
-			<ul >
-				<li id= "Dash_btn"><a href="#">Dashboard</a></li>
-				<li id= "Orders_btn"><a href = "#">Orders</a></li>
-				<li id= "FAQ"><a href= "#">FAQ</a></li>
-				<li id= "User"><a href= "#">Leah Rey</a></li>
-			</ul>
+				<ul class= "nav_row">
+					<li class= "left_nav">
+						<ul>
+							<li id= "Dash_btn"><a href="#">Dashboard</a></li>
+							<li id= "FAQ"><a href= "#">FAQ</a></li>
+						</ul>
+					</li>
+					<li class= "right_nav">
+						<ul>
+							<li id= "Orders_btn"><a href = "#">Orders</a></li>
+							<li id= "User"><a href= "#">Leah Rey</a></li>
+							<!-- dropdown arrow: font awesome -->
+						</ul>
+					</li>
+				</ul>
 			</div>
+
+			<a href= "#" id="FE_logo"><img src= "img/FE_logo_full" id="FE_logo"></a>
 		</nav>
+
+
+		<!-- line break -->
+
+		<hr class= "container"></hr>
+
+
 
 		<!-- ****  Title and text -->
 		<div id= "title_text">
 			<h1><span class= "Step2">Step 2 : </span>Product Profile</h1>
-			<h3>Just 2 more steps to go!</h3>
+			<p id= "title_subtext">Just 2 more steps to go!</p>
 		</div>
 
 		<!-- **** progress bar -->
-		<nav>
-			<ul class= "progress_bar">
-				<li><a href= "#" class= "completed_tab">Company</a></li>
-				<li><a href= "#" class="completed_tab"><span class= "Products_tab">Products</span></a></li>
-				<li><a href= "#" class= "incomplete_tab">Users</a></li>
-				<li><a href= "#" class= "incomplete_tab">Payment</a></li>
+		<div class= "progress_bar .HelveticaNeue">
+			<ul>
+				<li><a href= "#" class= "completed nav_tab">Company</a></li>
+				<li><a href= "#" class="completed nav_tab"><span class= "Products_tab">Products</span></a></li>
+				<li><a href= "#" class= "incomplete nav_tab">Users</a></li>
+				<li><a href= "#" class= "incomplete nav_tab">Payment</a></li>
 			</ul>
-		</nav>
+		</div>
 
 	</header>
 
 
-<!-- //////////////////////////// FIXED RIGHT PANEL////////////////////////// 
-/////////////////////////////////////////////////////////////////////////-->
-
-	<!-- NOTES::: 
-	have to add elemeent FAQ's/ Descriptions for hover/ click states	
-
-	Ask Chris:
-	how do you do checkmarks? -->
-
-<div class="container">
-
-	<div class= "right_panel right-rail">
-
-		<!-- ****Local Nav/ Checklist -->
-		<div class= "local_nav">
-			<h4>Your Products</h4>
-			<ul>
-				<li><a href= "#">Clementine Preserves</a></li>
-				<li><a href= "#">Springtime Blueberry Jam</a></li>
-				<li><a href= "#">Raspberry Jam</a></li>
-				<li><a href= "#">Grape Jam</a></li>
-				<li><a href= "#">Pomegranate Jam</a></li>
-				<li><a href= "#">Pineapple Preserves</a></li>
-				<li><a href= "#">Table Water Crackers</a></li>
-			</ul>
-		</div>
-
-
-		<!-- ****ADD LATER -->
-		<div class= "element_descriptions">
-		</div>
-	</div>
 
 
 
-<!-- //////////////////////////// MAIN CONTENT ///////////////////////// 
-/////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- * * * * * * * * * * * MAIN CONTENT * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
+
+
+
 
 	<div class= "main_content left-rail"> 
 
@@ -107,7 +95,7 @@ How do I make the little upside down triangle that indicates a dropdown?  -->
 
 				<!-- logo and social block -->
 				<div class= "logo_and_social">
-					<img id= "preserving_sf_logo" src = "img/preserving_sf_logo.png">
+					<img id= "preserving_sf_logo" src = "img/preserving sf logo.png">
 					<div class= "social_row">
 						<ul>
 							<li><a href= "#"><img src= "img/facebook-grey.png"></a></li>
@@ -335,13 +323,48 @@ How do I make the little upside down triangle that indicates a dropdown?  -->
 		</div> <!-- main container -->
 	</div> <!-- main content -->
 
+
+
+
+
+<!-- * * * * * * * * * * * FIXED RIGHT PANEL* * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
+
+
+	<!-- NOTES::: 
+	have to add elemeent FAQ's/ Descriptions for hover/ click states	
+
+	Ask Chris:
+	how do you do checkmarks? -->
+
+<div class="container">
+
+	<div class= "right_panel right-rail">
+
+		<!-- ****Local Nav/ Checklist -->
+		<div class= "local_nav">
+			<h4>Your Products</h4>
+			<ul>
+				<li><a href= "#">Clementine Preserves</a></li>
+				<li><a href= "#">Springtime Blueberry Jam</a></li>
+				<li><a href= "#">Raspberry Jam</a></li>
+				<li><a href= "#">Grape Jam</a></li>
+				<li><a href= "#">Pomegranate Jam</a></li>
+				<li><a href= "#">Pineapple Preserves</a></li>
+				<li><a href= "#">Table Water Crackers</a></li>
+			</ul>
+		</div>
+
+
+		<!-- ****ADD LATER -->
+		<div class= "element_descriptions">
+		</div>
+	</div>
 </div>
 
 
-
-
-<!-- //////////////////////////// FOOTER ////////////////////////// 
-/////////////////////////////////////////////////////////////////////////-->
+<!-- * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
 
 
 

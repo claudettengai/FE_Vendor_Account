@@ -1,108 +1,359 @@
-/*Where do I specify fonts? Should I still do it at the top when 
-I have so many different fonts on this page? Near the specific element
-or at the top?*/
+
+/* * * * * * * * * * * * * FONT * * * * * * * * * * * */
 
 
-/*Font
-==========================================================*/
+html, body {
+    font-size: 16px;
+} 
 
-body{
-	 font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
 	 margin: 0;
+	 font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;}
 
+
+h1 {
+	/* Helvetica Neue Medium Font Stack */
+	font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:500; font-stretch:normal;
+	color: #333333;
+	font-size: 2.125em;
 }
+
+
+
+
+
+
+
+/* Helvetica Neue Regular Font Stack */
+.HelveticaNeue{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;}
+
+
+/* Helvetica Neue Medium Font Stack */
+.HelveticaNeueMedium{
+	font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:500; font-stretch:normal;}
+
+/* Helvetica Neue Bold Font Stack */
+.HelveticaNeueBold{
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;}
+
+
+
+
+
+
+/* * * * * * * * * * * * * GRID* * * * * * * * * * * * */ 
 
 .container {
 	width: 90%;
 	margin: 0 auto;
+	/*border: 1px solid purple;*/
 }
-
-/*GRID*/
 
 .full-width {
 	width: 100%;
-	border: 1px solid red;
+	/*border: 2px solid red;*/
 }
 
 .left-rail {
-	width: 75%;
+	width: 72%;
 	float: left;
-	border: 1px solid red;
+	/*border: 2px solid red;*/
 
 }
 
 .right-rail {
-	width: 20%;
+	width: 23%;
 	float: right;
-	border: 1px solid red;
+	/*border: 2px solid red;*/
 
 }
 
-/*//////////////////////////// HEADER ////////////////////////// 
-/////////////////////////////////////////////////////////////////////////*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+
+
+
+/* 
+.....
+.......
+........
+Header!
+........
+.....
+....
+*/
+
+
+
+
+
+/***************** NAV******************/
+
 
 .top_nav{
-	width: 100%;
-	background-color: teal;
+	background-color: white;
+	color : #127074;
+	padding-bottom: 3em;
 }
-
 
 
 .top_nav ul{
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
-	width: 100%;
-	overflow: auto;
-
-
 }
 
-/*Why won't the ul span the width of the page?*/
 
 
 .top_nav li{
-	float: left;
-	margin: 0 auto;
-
-
-}
-
-a#FE_logo {
-	width: 50px;
-	float: left;
+	display: inline-block;
+	font-size: 14px;
 
 }
 
-#FE_logo img{
-	width: 100%;
-}
 
-.top_nav a{
+
+.top_nav li a{
 	text-decoration: none;
+	padding: .5em 1em;
 	display: block;
-	padding: 20px;
-	border: 1px solid black;
-
-	
+/*	border: 1px solid black;*/
 }
 
+
+/*visited link*/
+.top_nav li a:visited {
+	color: #127074; ;
+}
+
+/* mouse over link */
+.top_nav li a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+
+
+
+
+.top_nav ul.nav_row{
+/*	border: 1px solid orange;*/
+	position: relative;
+
+	margin-top: 2em;
+}
+
+
+
+
+
+.top_nav li.right_nav{
+	float: right;
+}
 
 
 
 #Dash_btn a{
-	color: #ec6766;
-	font-size: 16pt;
-	font-weight: 600;
-	
+	font-size : 16px;
+  	line-height : 20.1px;
+	color : #EC6766;
+  	border: 1px solid #EC6766;
+  	margin-right: 2.5em;
+  
+}
+
+/* mouse over link */
+#Dash_btn a:hover{ 
+	text-decoration: none;
+	background-color: #EC6766;
+	color: #fff;	
+}
+
+
+
+
+#Orders_btn a{
+/*	font-size : 16px;*/
+  	line-height : 20.1px;
+	color : #127074;
+  	border: 1px solid #127074;
+  	padding: .35em 1em;
+}
+
+
+/* mouse over link */
+#Orders_btn a:hover{ 
+	text-decoration: none;
+	background-color: #127074;
+	color: #fff;	
+}
+
+
+
+
+
+#User{
+	font-size: 14px;
+	margin-left: 2.5em;
+}
+
+
+
+
+#FE_logo {
+	width: 93px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2.375em;
+}
+
+
+hr { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #84cdb6;
 
 }
 
+
+/** MEDIA QUERY**/
+
+@media (max-width: 600px){
+
+	ul.nav_row{
+		width: 100%;
+	}
+
+	ul.nav_row li a{
+		display: inline-block;
+	}
+
+	#Dash_btn a{
+		margin: 0;
+		margin-right: 1.95em;
+		border: none;
+		padding:0;
+	}
+	#Dash_btn a:hover{
+		background-color:white;
+		color: #333;
+		text-decoration: underline;
+	}
+
+	#Orders_btn a{
+		border:none;
+		padding:0;
+	}
+	#Orders_btn a:hover{
+		background-color:white;
+		color: #333;
+		text-decoration: underline;
+	}
+
+	li#User{
+		margin: 0;
+		margin-left: 1.95em;
+	}
+
+	#FE_logo {
+		margin: 1.3em auto -.5em auto;
+	}
+}
+
+/** Media Query End **/
+
+
+
+
+/****************** Header Text***************/
 
 #title_text{
 	width:100%;
-text-align: center;
+	text-align: center;
+	margin-top: 3.25em;
+	margin-bottom: 3.725em;
 }
+
+.Step2 {
+	color: #127074;
+}
+
+p#title_subtext{
+	margin:0;
+	margin-top: 1.5em;
+	font-size: 1.125em;
+	color: #127074;
+}
+
+
+
+/****************** Progress Bar ***************/
+
+
+.progress_bar ul{
+	margin:0;
+	width: 100%;
+	padding: 0;
+}
+
+.progress_bar ul li{
+	list-style-type: none;
+	width: 25%;
+	float:left;
+}
+
+.progress_bar ul li a{
+	text-decoration: none;
+	color: #127074;
+	display: inline-block;
+	width: 100%;
+	line-height: 3.3em;
+	text-align: center;
+	background-color: #84cdb6;
+	border: 1px solid white;
+	}
+
+
+.nav_tab{
+	font-size: 1.625em;
+}
+
+.Products_tab{
+	color: #fff;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.incomplete.nav_tab{
+	background-color: rgba(132, 205, 182, .4);
+;
+}
+
+
+
+
+
+
+
+
+
+/****************** Right Panel ***************/
+
+.local_nav li{
+	list-style-type: none;
+}
+
+.
+
+
+
+
+
+
+
 
 
 
