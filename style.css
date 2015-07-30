@@ -284,7 +284,7 @@ hr {
 p#title_subtext{
 	margin:0;
 	margin-top: 1.5em;
-	font-size: 1.125em;
+	font-size: 1.125em; /*(of 1em=16px)*/
 	color: #127074;
 }
 
@@ -299,41 +299,119 @@ p#title_subtext{
 	padding: 0;
 }
 
-.progress_bar ul li{
+.nav_tab{
 	list-style-type: none;
 	width: 25%;
 	float:left;
 }
 
-.progress_bar ul li a{
+.nav_tab a{
 	text-decoration: none;
 	color: #127074;
 	display: inline-block;
 	width: 100%;
-	line-height: 3.3em;
+	line-height: 3.3em; /*(of 1em = 24px; 3.3em= 80px)*/
 	text-align: center;
+	text-indent: .7em;
 	background-color: #84cdb6;
-	border: 1px solid white;
+	border: .1em solid white;
+	font-size: 1.5em; /*(of 1em = 24px)*/
 	}
 
 
-.nav_tab{
-	font-size: 1.625em;
-}
-
-.Products_tab{
-	color: #fff;
+.Products_tab a{
+	color: #127074;
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 1.875em; /*(of 1em = 16px; 1.875em= 30px)*/
+	line-height: 2.66666em; /*(of 1em = 30px; 2.66em= 80px)*/
+	border: .08em solid white;
+	text-indent: 1.5em;
 }
 
-.incomplete.nav_tab{
-	background-color: rgba(132, 205, 182, .4);
-;
+
+.Users a{
+	text-indent: 2em;
 }
 
 
 
+
+.nav_tab.completed::after, 
+.nav_tab.Users::after {
+
+  	content: "";
+	position: absolute;
+	margin-left: 25%;
+	margin-top: -5.065em;
+  	width: 0;
+	height: 0;
+	border-top: 2.5em solid transparent;
+	border-left: 2.9em solid #84cdb6;
+	border-bottom: 2.5em solid transparent;
+
+}
+
+
+.nav_tab.completed::before,
+.nav_tab.Users::before {
+
+  	content: "";
+	position: absolute;
+	margin-left: 25%;
+	margin-top: -0.065em;
+  	width: 0;
+	height: 0;
+	border-top: 2.7em solid transparent;
+	border-left: 3.2em solid #fff;
+	border-bottom: 2.7em solid transparent;
+
+}
+
+
+
+.incomplete.nav_tab a{
+	background-color: #c8e9de;
+}
+
+
+.nav_tab.Users::after {
+	border-left: 2.9em solid #c8e9de;
+}
+
+
+
+/*.nav_tab.completed a:hover:after, 
+.nav_tab.Users a:hover:after{
+	margin-top: -5em;
+  
+}
+
+.nav_tab.completed::before a:hover,
+.nav_tab.Users::before a:hover {
+	margin: 0;
+
+}*/
+
+.nav_tab a:hover{
+	font-weight: bold;
+	font-size: 1.52em; /*(of 1em = 16px; 1.56em= 25px)*/
+	line-height: 3.2em; /*(of 1em = 25px; 3.2em= 80px)*/
+	border: .096em solid white;
+}
+
+
+.Products_tab a:hover{
+	color: #127074;
+	font-weight: bold;
+	font-size: 1.875em; /*(of 1em = 16px; 1.875em= 30px)*/
+	line-height: 2.66666em; /*(of 1em = 30px; 2.66em= 80px)*/
+	border: .08em solid white;
+	text-indent: 1.5em;
+}
+
+/*https://css-tricks.com/almanac/selectors/a/after-and-before/
+http://css-tricks.com/snippets/css/css-triangle/
+http://lawrencenaman.com/css/responsive-slanted-divs-with-css/*/
 
 
 
