@@ -306,6 +306,7 @@ p#title_subtext{
 }
 
 .nav_tab a{
+	font-size: 1.5em; /*(of 1em = 24px)*/
 	text-decoration: none;
 	color: #127074;
 	display: inline-block;
@@ -315,7 +316,7 @@ p#title_subtext{
 	text-indent: .7em;
 	background-color: #84cdb6;
 	border: .1em solid white;
-	font-size: 1.5em; /*(of 1em = 24px)*/
+	
 	}
 
 
@@ -334,7 +335,9 @@ p#title_subtext{
 }
 
 
-
+.incomplete.nav_tab a{
+	background-color: #c8e9de;
+}
 
 .nav_tab.completed::after, 
 .nav_tab.Users::after {
@@ -362,15 +365,9 @@ p#title_subtext{
   	width: 0;
 	height: 0;
 	border-top: 2.7em solid transparent;
-	border-left: 3.2em solid #fff;
+	border-left: 3.2em solid white;
 	border-bottom: 2.7em solid transparent;
 
-}
-
-
-
-.incomplete.nav_tab a{
-	background-color: #c8e9de;
 }
 
 
@@ -380,26 +377,18 @@ p#title_subtext{
 
 
 
-/*.nav_tab.completed a:hover:after, 
-.nav_tab.Users a:hover:after{
-	margin-top: -5em;
-  
-}
-
-.nav_tab.completed::before a:hover,
-.nav_tab.Users::before a:hover {
-	margin: 0;
-
-}*/
-
-.nav_tab a:hover{
+/*hover states*/
+.nav_tab a:hover {
 	font-weight: bold;
 	font-size: 1.52em; /*(of 1em = 16px; 1.56em= 25px)*/
-	line-height: 3.2em; /*(of 1em = 25px; 3.2em= 80px)*/
-	border: .096em solid white;
+	line-height: 3.25em; /*(of 1em = 25px; 3.25em= 80px)*/
+	border: .096em solid white; /*add border width to compensate size*/
 }
 
 
+
+/*
+keeps product tab static*/
 .Products_tab a:hover{
 	color: #127074;
 	font-weight: bold;
@@ -409,9 +398,177 @@ p#title_subtext{
 	text-indent: 1.5em;
 }
 
-/*https://css-tricks.com/almanac/selectors/a/after-and-before/
-http://css-tricks.com/snippets/css/css-triangle/
-http://lawrencenaman.com/css/responsive-slanted-divs-with-css/*/
+
+
+
+
+/***************/
+
+/** Progress bar MEDIA QUERIES**/
+
+@media (max-width: 900px){
+
+	.nav_tab a{
+		font-size: 1.25em; /*(of 1em = 16px;  1.25em = 20px)*/
+		line-height: 3.1em; /*(of 1em = 20px; 3.1em= 62px)*/
+		text-indent: .7em;
+		border: .1em solid white; /*(at 12m= 20px; .1em= 2px)*/
+	}
+
+
+	.Products_tab a{
+		color: #127074;
+		font-weight: bold;
+		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
+		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
+		border: .08em solid white; /*(of 1em=25px; .08em=2px)*/
+		text-indent: 1.7em;
+	}
+
+
+	.Users a{
+		text-indent: 2em;
+	}
+
+
+	.incomplete.nav_tab a{
+		background-color: #c8e9de;
+	}
+
+	.nav_tab.completed::after, 
+	.nav_tab.Users::after {
+
+	  	content: "";
+		position: absolute;
+		margin-left: 25%;
+		margin-top: -4em;  /*at 1em=16px; -3.975em= 64px (62 px then add 2px border)*/
+	  	width: 0;
+		height: 0;
+		border-top: 1.95em solid transparent;
+		border-left: 2.54em solid #84cdb6;
+		border-bottom: 1.95em solid transparent;
+
+	}
+
+
+	.nav_tab.Users::after {
+		border-left: 2.54em solid #c8e9de;
+	}
+
+	.nav_tab.completed::before,
+	.nav_tab.Users::before {
+
+	  	content: "";
+		position: absolute;
+		margin-left: 25%;
+		margin-top: -0.065em;
+	  	width: 0;
+		height: 0;
+		border-top: 2.15em solid transparent;
+		border-left: 2.74em solid white;
+		border-bottom: 2.15em solid transparent;
+
+	}
+
+	/*hover states*/
+	.nav_tab a:hover {
+		font-weight: bold;
+		font-size: 1.25em; /*keep font-size and line height the same as non-hover*/
+		line-height: 3.1em; 
+		border: .106em solid white; /*add some border to compensate size*/
+	}
+
+
+
+	/*
+	keeps product tab static*/
+	.Products_tab a:hover{
+		color: #127074;
+		font-weight: bold;
+		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
+		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
+		border: .08em solid white; /*(of 1em=25px; .08em=2px)*/
+		text-indent: 1.8em;
+	}
+
+
+}
+
+
+
+
+
+
+/*getting rid of arrows*/
+@media (max-width: 700px){
+	.nav_tab.completed::after, 
+	.nav_tab.Users::after {
+		border-left: 0;		
+	}
+
+
+	.nav_tab.completed::before,
+	.nav_tab.Users::before {
+		border-left: 0;
+	}
+
+
+	.nav_tab a{
+		text-indent:0em;
+		font-size: 1em;
+		width:98%;
+	}
+
+	.Company a{
+		width: 98%;
+	}
+
+	.Products_tab a{
+		line-height: 3em;	/*keeping the same font size as all just bolded and outlined*/
+		border: .13em solid #127074;
+
+	}
+
+
+	.Users a{
+		width:96%;
+		margin-left:3%;
+	}
+
+
+	/*hover states*/
+	.nav_tab a:hover {
+		font-size: 1em;
+		width:98%;
+		line-height: 3em;	/*keeping the same font size as all just bolded and outlined*/
+		border: .13em solid #127074;
+
+	}
+
+	.Users a:hover{
+		width: 93%;
+	}
+
+
+
+	/*
+	keeps product tab static*/
+	.Products_tab a:hover{
+		text-indent: 0;
+	}
+
+
+
+
+
+
+/** Media Queries End **/
+/******************
+*/
+
+
+
+
 
 
 
