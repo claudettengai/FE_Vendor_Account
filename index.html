@@ -60,7 +60,7 @@
 		<!-- **** progress bar -->
 		<div class= "progress_bar .HelveticaNeue">
 			<ul>
-				<li class= "Company completed nav_tab"><a href= "#">Company</a><div class="arrow"</div></li>
+				<li class= "Company completed nav_tab"><a href= "#">Company</a></li>
 				<li class= "Products_tab completed nav_tab"><a href= "#">Products</a></li>
 				<li class= "Users incomplete nav_tab"><a href= "#">Users</a></li>
 				<li class= "incomplete nav_tab"><a href= "#">Payment</a></li>
@@ -81,19 +81,18 @@
 
 
 
-	<div class= "main_content left-rail"> 
+	<div class= "left-rail"> 
 
-		<div class ="main_container"> 
-			<!-- contains all content (except panel) under banner  -->
+		<img id="banner_photo" class="full-width" src="img/preserving-sf-banner.png">
 
-			<img id="banner photo" class="full-width" src="img/preserving-sf-banner.png">
+		<div class= "main_content">
 
-			<!-- COME BACK TO THIS ++ fill in company info!! -->
+
 			<div class= "company_info"> 
-				<!-- This container starts with logo and ends with text - it has a negative right margin  -->
+			<!-- This container starts with logo and ends with text - it has a negative right margin  -->
 
 
-				<!-- logo and social block -->
+			<!-- logo and social block -->
 				<div class= "logo_and_social">
 					<img id= "preserving_sf_logo" src = "img/preserving sf logo.png">
 					<div class= "social_row">
@@ -117,15 +116,16 @@
 			<div class = "prod_gall_descript">
 				<div class= "prod_gall_tabs">
 					<ul>
-						<li><h5 class"14_and_10_bold">4 <span class = "10_bold">Products</span></h5></li>
-						<li><h5 class= "14_and_10_bold">3 <span class= "10_bold">Gallery Items</span></h5></li>
+						<li class= "prod_tab"><h5><span class= "num">4</span><br>Products</h5><hr class= "underline_green"></hr></li>
+						<li class= "gall_tab"><h5><span class= "num">3</span><br>Gallery Items</h5><hr class= "underline_grey"></hr></li>
 					</ul>
-					<div id= "description">
-						<p>At Preserving SF, we strive to capture not only the flavor of our perfectly ripened fruits, but also the purity, love and care that went into every step of the process from...<span class= "green">&#40;more&#41;</span></p>
-					</div>
+				</div>	
+				<div id= "description">
+					<p>At Preserving SF, we strive to capture not only the flavor of our perfectly ripened fruits, but also the purity, love and care that went into every step of the process from...<span class= "green">&#40;more&#41;</span></p>
 				</div>
 			</div>
 		</div>
+	</div>
 
 
 
@@ -133,194 +133,203 @@
 
 
 
-			<!-- ****INDIVIDUAL PRODUCTS -->
-				<!-- Ask Chris: 
-				When do I put lists into divs or keep them as uls?  -->
 
-
-			<div class= "product_list">
-
-				<h5><strong>6 ITEMS  |  </strong>Drag to arrange the order of live items</h5>
-				<!-- still figuring out how to configure this heading -->	
-				<!-- also do I want to make sort by a dropdown? --> 			
-
-
-				<ul class= "product_blocks">
-
-
-					<!-- **** Product1 -->
-					<li class= "block1">
-						<!-- "draft" overlay in css? -->
-						<img src= "img/product1.jpg">
-						<h5>Clementine Preserves</h5>
-						<h6>Preserving SF</h6>
-						<ul class= "variant_list">
-							<li><ul class= "variant1">
-									<li class= "DRAFT">DRAFT</li>
-									<li class= "Price">$18.00</li>
-							</ul></li>
-						</ul>
-					</li>
-
-
-					<!-- **** Product 2 -->
-					<li class= "block2">
-
-						<img src= "img/product2.jpg">
-						<h5>Springtime Blueberry Jam</h5>
-						<h6>Preserving SF</h6>
-
-						<ul class= "variant_list">
-							<li>
-								<ul class= "variant_row_1">
-									<li class= "Size">8 oz. jar</li>
-									<li class= "Price">$12.00</li>
-								</ul>
-							</li>
-
-
-							<li>
-								<ul class= "variant_row_2">
-									<li class= "Size">12 oz. jar</li>
-									<li class = "DRAFT">DRAFT</li>
-								<li class= "Price">$0.00</li>
-								</ul>
-							</li>
-
-							<li>
-								<ul class= "variant_row_3">
-									<li class= "Size">16 oz. jar</li>
-									<li class= "Price">$20.00</li>
-								</ul>
-							</li>
-						</ul>	
-					</li>
-
-
-					<!-- **** Product 3 -->
-					<li class= "block3">
-
-						<img src= "img/product3.jpg">
-						<h5>Raspberry Jam</h5>
-						<h6>Preserving SF</h6>
-
-						<ul class= "variant_list">
-							<li>
-								<ul class= "variant_row_1">
-									<li class= "green Price">$12.00</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+<!-- line break -->
+<hr class= "full-width co_prod_divide"></hr>
 
 
 
 
-					<!-- **** Product 4 -->
-					<li class= "block4">
-
-						<img src= "img/product4.jpg">
-						<h5>Grape Jam</h5>
-						<h6>Preserving SF</h6>
-
-						<ul class= "variant_list">
-							<li>
-								<ul class= "variant_row_1">
-									<li class= "Size">8 oz. jar</li>
-									<li class= "Price">$12.00</li>
-								</ul>
-							</li>
 
 
-							<li>
-								<ul class= "variant_row_2">
-									<li class= "Size">12 oz. jar</li>
-									<li class = "DRAFT">DRAFT</li>
-								<li class= "Price">$0.00</li>
-								</ul>
-							</li>
-
-							<li>
-								<ul class= "variant_row_3">
-									<li class= "Size">16 oz. jar</li>
-									<li class= "Price">$20.00</li>
-								</ul>
-							</li>
-						</ul>	
-					</li>
+		<!-- ****INDIVIDUAL PRODUCTS -->
+			<!-- Ask Chris: 
+			When do I put lists into divs or keep them as uls?  -->
 
 
+		<div class= "main_content product_list">
 
-					<!-- **** Product 5 -->
-					<li class= "block5">
-
-						<img src= "img/product5.jpg">
-						<h5>Pomegranate Jam</h5>
-						<h6>Preserving SF</h6>
-
-						<ul class= "variant_list">
-							<li>
-								<ul class= "variant_row_1">
-									<li class= "DRAFT">DRAFT</li>
-									<li class= "green Price">$12.00</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+			<h5><strong>6 ITEMS  |  </strong>Drag to arrange the order of live items</h5>
+			<!-- still figuring out how to configure this heading -->	
+			<!-- also do I want to make sort by a dropdown? --> 			
 
 
-					<!-- **** Product 6 -->
-					<li class= "block6">
-
-						<img src= "img/product6.jpg">
-						<h5>Pineapple Preserves</h5>
-						<h6>Preserving SF</h6>
-
-						<ul class= "variant_list">
-							<li>
-								<ul class= "variant_row_1">
-									<li class= "Size">8 oz. jar</li>
-									<li class= "DRAFT">DRAFT</li>
-									<li class= "Price">$0.00</li>
-								</ul>
-							</li>
+			<ul class= "product_blocks">
 
 
-							<li>
-								<ul class= "variant_row_2">
-									<li class= "Size">12 oz. jar</li>
-									<li class = "DRAFT">DRAFT</li>
+				<!-- **** Product1 -->
+				<li class= "block1">
+					<!-- "draft" overlay in css? -->
+					<img src= "img/product1.jpg">
+					<h5>Clementine Preserves</h5>
+					<h6>Preserving SF</h6>
+					<ul class= "variant_list">
+						<li><ul class= "variant1">
+								<li class= "DRAFT">DRAFT</li>
+								<li class= "Price">$18.00</li>
+						</ul></li>
+					</ul>
+				</li>
+
+
+				<!-- **** Product 2 -->
+				<li class= "block2">
+
+					<img src= "img/product2.jpg">
+					<h5>Springtime Blueberry Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<ul class= "variant_list">
+						<li>
+							<ul class= "variant_row_1">
+								<li class= "Size">8 oz. jar</li>
 								<li class= "Price">$12.00</li>
-								</ul>
-							</li>
-						</ul>	
-					</li>
-
-					<!-- **** Product 7 -->
-					<li class= "block7">
-
-						<img src= "img/product7.jpg">
-						<h5>Table Water Crackers</h5>
-						<h6>Preserving SF</h6>
-
-						<ul class= "variant_list">
-							<li>
-								<ul class= "variant_row_1">
-									<li class= "green Price">$10.00</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+							</ul>
+						</li>
 
 
-					<!-- **** Add Product -->
-					<li class= "Add_Block">
-						<img src="img/add-product-block.png">
-					</li>
+						<li>
+							<ul class= "variant_row_2">
+								<li class= "Size">12 oz. jar</li>
+								<li class = "DRAFT">DRAFT</li>
+							<li class= "Price">$0.00</li>
+							</ul>
+						</li>
 
-				</ul> <!-- individual products -->
-			</div> <!-- product container -->
-		</div> <!-- main container -->
+						<li>
+							<ul class= "variant_row_3">
+								<li class= "Size">16 oz. jar</li>
+								<li class= "Price">$20.00</li>
+							</ul>
+						</li>
+					</ul>	
+				</li>
+
+
+				<!-- **** Product 3 -->
+				<li class= "block3">
+
+					<img src= "img/product3.jpg">
+					<h5>Raspberry Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<ul class= "variant_list">
+						<li>
+							<ul class= "variant_row_1">
+								<li class= "green Price">$12.00</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+
+
+
+				<!-- **** Product 4 -->
+				<li class= "block4">
+
+					<img src= "img/product4.jpg">
+					<h5>Grape Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<ul class= "variant_list">
+						<li>
+							<ul class= "variant_row_1">
+								<li class= "Size">8 oz. jar</li>
+								<li class= "Price">$12.00</li>
+							</ul>
+						</li>
+
+
+						<li>
+							<ul class= "variant_row_2">
+								<li class= "Size">12 oz. jar</li>
+								<li class = "DRAFT">DRAFT</li>
+							<li class= "Price">$0.00</li>
+							</ul>
+						</li>
+
+						<li>
+							<ul class= "variant_row_3">
+								<li class= "Size">16 oz. jar</li>
+								<li class= "Price">$20.00</li>
+							</ul>
+						</li>
+					</ul>	
+				</li>
+
+
+
+				<!-- **** Product 5 -->
+				<li class= "block5">
+
+					<img src= "img/product5.jpg">
+					<h5>Pomegranate Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<ul class= "variant_list">
+						<li>
+							<ul class= "variant_row_1">
+								<li class= "DRAFT">DRAFT</li>
+								<li class= "green Price">$12.00</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- **** Product 6 -->
+				<li class= "block6">
+
+					<img src= "img/product6.jpg">
+					<h5>Pineapple Preserves</h5>
+					<h6>Preserving SF</h6>
+
+					<ul class= "variant_list">
+						<li>
+							<ul class= "variant_row_1">
+								<li class= "Size">8 oz. jar</li>
+								<li class= "DRAFT">DRAFT</li>
+								<li class= "Price">$0.00</li>
+							</ul>
+						</li>
+
+
+						<li>
+							<ul class= "variant_row_2">
+								<li class= "Size">12 oz. jar</li>
+								<li class = "DRAFT">DRAFT</li>
+							<li class= "Price">$12.00</li>
+							</ul>
+						</li>
+					</ul>	
+				</li>
+
+				<!-- **** Product 7 -->
+				<li class= "block7">
+
+					<img src= "img/product7.jpg">
+					<h5>Table Water Crackers</h5>
+					<h6>Preserving SF</h6>
+
+					<ul class= "variant_list">
+						<li>
+							<ul class= "variant_row_1">
+								<li class= "green Price">$10.00</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- **** Add Product -->
+				<li class= "Add_Block">
+					<img src="img/add-product-block.png">
+				</li>
+
+			</ul> <!-- individual products -->
+		</div> <!-- product container -->
+	
 	</div> <!-- main content -->
 
 
@@ -337,30 +346,28 @@
 	Ask Chris:
 	how do you do checkmarks? -->
 
-<div class="container">
+<div class= "full-width right-rail">
 
-	<div class= "right_panel right-rail">
-
-		<!-- ****Local Nav/ Checklist -->
-		<div class= "local_nav">
-			<h4>Your Products</h4>
-			<ul>
-				<li><a href= "#">Clementine Preserves</a></li>
-				<li><a href= "#">Springtime Blueberry Jam</a></li>
-				<li><a href= "#">Raspberry Jam</a></li>
-				<li><a href= "#">Grape Jam</a></li>
-				<li><a href= "#">Pomegranate Jam</a></li>
-				<li><a href= "#">Pineapple Preserves</a></li>
-				<li><a href= "#">Table Water Crackers</a></li>
-			</ul>
-		</div>
-
-
-		<!-- ****ADD LATER -->
-		<div class= "element_descriptions">
-		</div>
+	<!-- ****Local Nav/ Checklist -->
+	<div class= "local_nav container">
+		<h4>Your Products</h4>
+		<ul>
+			<li><a href= "#">Clementine Preserves</a></li>
+			<li><a href= "#">Springtime Blueberry Jam</a></li>
+			<li><a href= "#">Raspberry Jam</a></li>
+			<li><a href= "#">Grape Jam</a></li>
+			<li><a href= "#">Pomegranate Jam</a></li>
+			<li><a href= "#">Pineapple Preserves</a></li>
+			<li><a href= "#">Table Water Crackers</a></li>
+		</ul>
 	</div>
+
+
+	<!-- ****ADD LATER -->
+<!-- 	<div class= "element_descriptions">
+	</div> -->
 </div>
+
 
 
 <!-- * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * 

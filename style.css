@@ -18,9 +18,56 @@ h1 {
 	font-size: 2.125em;
 }
 
+h2 {
+	font-family: "Memphis", sans-serif;
+	color: #1a1a1a;
+	font-size: 1.5em;
+	margin: 5px;
+}
 
 
 
+
+
+
+
+h5{ 
+	font-family: "Helvetica", "HelveticaNeueBold", "HelveticaNeue", "sans-serif";
+	font-weight: bold;
+	font-size: .625em;
+	text-transform: uppercase;
+}
+
+
+
+.num{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+
+
+h6{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+	color: #1a1a1a;
+	font-size: .875em;
+	margin: 3px;
+}
+
+
+#description p{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-size: .8125em; /*13px*/
+  	line-height : 21px;
+  	letter-spacing : 0.04px;
+  	font-style: oblique;
+  	color: #4d4d4d;
+}
+
+span.green{
+	color: #84cdb6;
+}
 
 
 
@@ -56,19 +103,33 @@ h1 {
 }
 
 .left-rail {
-	width: 72%;
+	width: 77%;
 	float: left;
 	/*border: 2px solid red;*/
+	background-color: #f4f7f8;
 
 }
 
 .right-rail {
+	margin: 0;
+	padding:0;
 	width: 23%;
 	float: right;
 	/*border: 2px solid red;*/
 
 }
 
+
+.main_content{
+	width: 75%;
+	margin:0;
+	padding:0;
+	margin-left: 14%;
+	margin-right: 16%;
+	display: block;
+/*	border: 2px solid red;*/
+
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * */ 
 
@@ -129,7 +190,6 @@ Header!
 
 /* mouse over link */
 .top_nav li a:hover {
-    color: #333333;
     text-decoration: underline;
 }
 
@@ -140,7 +200,6 @@ Header!
 .top_nav ul.nav_row{
 /*	border: 1px solid orange;*/
 	position: relative;
-
 	margin-top: 2em;
 }
 
@@ -239,7 +298,7 @@ hr {
 	}
 	#Dash_btn a:hover{
 		background-color:white;
-		color: #333;
+		color: #EC6766;
 		text-decoration: underline;
 	}
 
@@ -249,7 +308,7 @@ hr {
 	}
 	#Orders_btn a:hover{
 		background-color:white;
-		color: #333;
+		color: #127074;
 		text-decoration: underline;
 	}
 
@@ -422,7 +481,7 @@ keeps product tab static*/
 		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
 		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
 		border: .08em solid white; /*(of 1em=25px; .08em=2px)*/
-		text-indent: 1.7em;
+		text-indent: 1.8em;
 	}
 
 
@@ -517,10 +576,15 @@ keeps product tab static*/
 		text-indent:0em;
 		font-size: 1em;
 		width:98%;
+		margin-left:1%;
 	}
 
 	.Company a{
 		width: 98%;
+	}
+
+	.Users a{
+		margin-left: 1.5%;
 	}
 
 	.Products_tab a{
@@ -529,11 +593,6 @@ keeps product tab static*/
 
 	}
 
-
-	.Users a{
-		width:96%;
-		margin-left:3%;
-	}
 
 
 	/*hover states*/
@@ -547,6 +606,7 @@ keeps product tab static*/
 
 	.Users a:hover{
 		width: 93%;
+		margin-left: 2%;
 	}
 
 
@@ -558,7 +618,7 @@ keeps product tab static*/
 	}
 
 
-
+}
 
 
 
@@ -569,20 +629,340 @@ keeps product tab static*/
 
 
 
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- left rail! 
+........
+.....
+....
+*/
 
 
 
 
 
+/***************** Company Info Top portion ******************/
 
-/****************** Right Panel ***************/
-
-.local_nav li{
-	list-style-type: none;
+.company_info{
+	width: 103%;
+	display: block;
+	float: left;
+	padding-bottom: 2em;
+	margin-left: 1.9375em;
+/*	border: 2px solid blue;*/
 }
 
-.
+/*
+********in container- main content**********/
 
+
+
+
+
+.logo_and_social{
+	width: 9.375em; /*( or 150px -----at 1 em= 16px)*/
+	float: left;
+	position: relative;
+}
+
+
+#preserving_sf_logo{
+	width: 100%;
+	margin-top: -4.6875em; /*(-75px at 1em=16px)*/
+	margin-bottom: .4em;
+}
+
+
+.social_row ul{
+	width: 80%;
+	padding: 0; 
+	overflow:auto;
+	margin: auto;
+
+}
+.social_row ul li{
+	list-style-type: none;
+	margin: 4px;
+	float: left;
+}
+
+
+
+.social_row ul li a{
+	text-align: center;
+	display: block;
+
+}
+
+
+.social_row img{
+	width: 2em; /*(32px at 1 em =16px)*/
+}
+
+
+
+
+.co_name_location{
+	display: block;
+	float: left;
+	margin: .5em 1em 0 1.2em;
+	color: #333;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.prod_gall_descript{
+	width: 53%;
+	margin-top: -1.8em;
+	margin-left: 2.2em;
+	display: block;
+	float: right;
+}
+
+
+.prod_gall_tabs ul{
+	width: 60%;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	margin-left: 0;
+}
+
+.prod_gall_tabs ul li{
+	display: inline-block;
+	line-height: 1.25em; /*20px if 1em=16px*/
+	color: #333333;	
+
+}
+
+.prod_tab{
+	margin-right: 4em;
+}
+
+
+.underline_green{
+	border: 2px solid #84cdb6;
+	line-height: 0em;
+	margin-top: -.8em;
+	width: 150%;
+	margin-left: -25%;
+}
+
+
+.underline_grey{
+	border: 2px solid #CCCCCC;
+	line-height: 0em;
+	margin-top:-.8em;
+	width: 120%;
+	margin-left: -10%;
+
+}
+
+
+
+
+
+
+/***************/
+
+/**  Products/ Gallery/ Description MEDIA QUERIES**/
+
+@media (min-width: 1378px){
+
+
+	.prod_gall_descript{
+		width: 53%;
+		margin-top: 2em;
+		margin-left: 2em;
+
+	}
+
+}
+
+
+
+
+@media (max-width: 1150px){
+
+
+
+
+
+	.prod_gall_tabs ul{
+		float: right;
+		width: 100%;
+		padding-right: 3em;
+		text-align: right;
+	}
+
+	.prod_gall_descript{
+		width: 65%;
+		float: right;	
+		margin-top: -.5em;
+	}
+
+
+
+	.prod_tab .num{
+		margin-right: 1.55em;
+
+	}
+
+	.gall_tab .num{
+		margin-right: 2.6em;
+	}
+}
+
+
+
+@media (max-width: 750px){
+	.prod_gall_descript{
+		width: 100%;
+		margin-top: -2em;
+	}
+
+
+
+
+}
+
+
+/** END OF MEDIA QUERIES**/
+
+/***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr.co_prod_divide{
+	border: 3px solid #e6e6e6;
+
+}
+
+
+
+
+.product_list{
+	display: inline-block;
+	margin
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********REFORMATTING FOR LESS THAN 900PX**************/
+
+@media (max-width: 900px){
+	.left-rail{
+		width:100%;
+	}
+
+	.main_content{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+	.company_info{
+		margin-left: -1.8em;
+		
+
+	}
+
+
+
+
+
+	.prod_gall_descript{
+		padding-top: 2em;
+		width: 100%;
+	}
+
+	.prod_gall_tabs ul{
+		padding:0;
+		text-align: left;
+		width: 100%;
+
+		
+	}
+
+
+
+	.prod_tab {
+		margin-left: 2%;
+
+	}
+	.prod_tab .num{
+		margin: 0 0 0 1.8em;
+	}
+
+	.gall_tab .num{
+		margin:0 0 0 2.5em;
+	}
+
+
+	.description{
+		width: 100%;
+		float: none;
+		display: inline-block;
+		overflow: auto;
+	}
+
+
+}
+
+
+
+
+
+
+
+/**********right panel**************/
 
 
 
