@@ -127,7 +127,7 @@ span.green{
 	margin-left: 14%;
 	margin-right: 16%;
 	display: block;
-/*	border: 2px solid red;*/
+	border: 2px solid red;
 
 }
 
@@ -465,7 +465,7 @@ keeps product tab static*/
 
 /** Progress bar MEDIA QUERIES**/
 
-@media (max-width: 900px){
+@media (max-width: 1050px){
 
 	.nav_tab a{
 		font-size: 1.25em; /*(of 1em = 16px;  1.25em = 20px)*/
@@ -653,9 +653,34 @@ content- left rail!
 	display: block;
 	float: left;
 	padding-bottom: 2em;
-	margin-left: 1.9375em;
-/*	border: 2px solid blue;*/
+	margin-left: 4.1%;
+	/*border: 2px solid blue;*/
 }
+
+
+/*******MEDIA QUERIES TABLET*********/
+
+@media (max-width: 900px){
+	.left-rail{
+		width:100%;
+	}
+
+	.main_content{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+	.company_info{
+		width: 112%;
+		margin-left: -5%;
+	}
+}
+/************END MEDIA QUERIES*******/
+
+
+
 
 /*
 ********in container- main content**********/
@@ -780,7 +805,7 @@ content- left rail!
 
 /***************/
 
-/**  Products/ Gallery/ Description MEDIA QUERIES**/
+/** Co Info MEDIA QUERIES**/
 
 @media (min-width: 1378px){
 
@@ -801,8 +826,6 @@ content- left rail!
 
 
 
-
-
 	.prod_gall_tabs ul{
 		float: right;
 		width: 100%;
@@ -813,9 +836,8 @@ content- left rail!
 	.prod_gall_descript{
 		width: 65%;
 		float: right;	
-		margin-top: -.5em;
+		margin-top: -1.8em;
 	}
-
 
 
 	.prod_tab .num{
@@ -830,26 +852,86 @@ content- left rail!
 
 
 
-@media (max-width: 750px){
+
+
+
+
+
+/*Tablet*/
+
+@media (max-width: 900px){
+
 	.prod_gall_descript{
-		width: 100%;
+		width: 53%;
 		margin-top: -2em;
+		margin-left: 2.2em;
+
 	}
 
 
+	.prod_gall_tabs ul{
+		width: 60%;
+		padding: 0;
+		float:none;
+	}
 
 
 }
 
 
-/** END OF MEDIA QUERIES**/
+
+
+@media (max-width: 780px){
+
+
+
+	.prod_gall_tabs ul{
+		width: 90%;
+		float:none;
+		text-align: right;
+	}
+
+	.prod_gall_descript{
+		width: 65%;
+		float: right;	
+		margin-top: -1.8em;
+	}
+
+	.prod_tab{
+		margin-right: 2.5em;
+	}
+
+	.prod_tab .num{
+		margin-right: 1.55em;
+
+	}
+
+	.gall_tab .num{
+		margin-right: 2.6em;
+	}
+
+}
+
+
+
+@media (max-width: 590px){
+
+	.prod_gall_tabs{
+		display:none;
+	}
+
+	.prod_gall_descript{
+		margin-top: 0em;
+		width: 95%;
+		margin:auto;
+	}
+
+}
+
+
+/** END OF Co. Info MEDIA QUERIES**/
 
 /***************/
-
-
-
-
-
 
 
 
@@ -863,6 +945,17 @@ hr.co_prod_divide{
 	border: 3px solid #e6e6e6;
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -889,80 +982,6 @@ hr.co_prod_divide{
 
 
 
-
-
-
-
-
-/**********REFORMATTING FOR LESS THAN 900PX**************/
-
-@media (max-width: 900px){
-	.left-rail{
-		width:100%;
-	}
-
-	.main_content{
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-
-	.company_info{
-		margin-left: -1.8em;
-		
-
-	}
-
-
-
-
-
-	.prod_gall_descript{
-		padding-top: 2em;
-		width: 100%;
-	}
-
-	.prod_gall_tabs ul{
-		padding:0;
-		text-align: left;
-		width: 100%;
-
-		
-	}
-
-
-
-	.prod_tab {
-		margin-left: 2%;
-
-	}
-	.prod_tab .num{
-		margin: 0 0 0 1.8em;
-	}
-
-	.gall_tab .num{
-		margin:0 0 0 2.5em;
-	}
-
-
-	.description{
-		width: 100%;
-		float: none;
-		display: inline-block;
-		overflow: auto;
-	}
-
-
-}
-
-
-
-
-
-
-
-/**********right panel**************/
 
 
 
