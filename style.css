@@ -26,7 +26,14 @@ h2 {
 }
 
 
+h3{
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+	font-size: 1.0625em;
+	color: #1a1a1a;
+	padding: .35em 0 .2em 0;
+	margin:0;
 
+}
 
 
 
@@ -40,11 +47,17 @@ h5{
 
 
 
+
 .num{
 	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
 	font-weight: lighter;
 	font-size: 14px;
 }
+
+
+
+
+
 
 
 
@@ -56,7 +69,16 @@ h6{
 }
 
 
-#description p{
+.product_blocks h6{
+	color: #666666;
+	margin:0;
+	padding: 0.22em 0 0 0;
+} 
+
+
+
+
+p.descript_text{
 	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
 	font-size: .8125em; /*13px*/
   	line-height : 21px;
@@ -68,6 +90,46 @@ h6{
 span.green{
 	color: #84cdb6;
 }
+
+
+
+p.prod_intro_text{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-weight: normal;
+	font-size: .875em; /*(14px)*/
+	text-transform: uppercase;
+	color: #127074;
+	margin:0;
+
+}
+
+p.prod_intro_text #items{
+	font-weight: bold;
+}
+
+p.prod_intro_text #text_divide{
+	margin: 0 1em;
+}
+
+
+
+.variant_list{
+	font-size: .875em;
+}
+
+td.size{
+	color: #4d4d4d;
+	font-weight: 500;	
+}
+
+td.draft{
+	color: #ec6766;
+}
+
+td.price{
+	color: #84cdb6;
+}
+
 
 
 
@@ -127,7 +189,7 @@ span.green{
 	margin-left: 14%;
 	margin-right: 16%;
 	display: block;
-	border: 2px solid red;
+/*	border: 2px solid red;*/
 
 }
 
@@ -636,7 +698,7 @@ keeps product tab static*/
 .....
 .......
 ........
-content- left rail! 
+content- left rail-- Company Info Top Portion! 
 ........
 .....
 ....
@@ -931,9 +993,10 @@ content- left rail!
 
 /** END OF Co. Info MEDIA QUERIES**/
 
-/***************/
 
 
+
+/*************END OF LEFT RAIL CO INFO ***************/
 
 
 
@@ -955,6 +1018,25 @@ hr.co_prod_divide{
 
 
 
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- left rail-- Products and Product Add ****************
+........
+.....
+....
+*/
+
+
+
+
+
+/***************** Product List/ Product Add ******************/
+
 
 
 
@@ -962,8 +1044,41 @@ hr.co_prod_divide{
 
 .product_list{
 	display: inline-block;
-	margin
+	padding-top: 3em; /*(48px)*/
 
+}
+
+ul.product_blocks{
+	padding:0;
+	margin:0;
+	padding-top: 4.25em; /*68px*/
+	list-style-type: none;
+	
+}
+
+.product_blocks li{
+/*	border: 2px solid red;*/
+	display: inline;
+	float: left;
+}
+
+.product_blocks a{
+	display: inline-block;
+	padding: 0;
+	margin:0;
+/*	border: 2px solid blue;*/
+}
+
+
+
+.product_blocks li{
+
+}
+
+
+
+.product_blocks img{
+	width: 202px;
 }
 
 
@@ -971,8 +1086,30 @@ hr.co_prod_divide{
 
 
 
+table.variant_list{
+	margin-top: 1.5em;
+	padding: 0;
+	width: 114%;
+}
+
+table.variant_list td{
+	width: 33.33%;
+	height: 2.2em;
+}
 
 
+
+
+
+
+td.draft{
+	padding-left: .25em;
+}
+
+.block1 td.draft,
+.block5 td.draft{
+	padding-left: 0;
+}
 
 
 
