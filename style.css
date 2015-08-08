@@ -132,6 +132,16 @@ td.price{
 
 
 
+.local_nav li{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+	line-height: 33pt;
+	font-size: 14px;
+	text-transform: uppercase;
+
+
+}
+
+
 
 /* Helvetica Neue Regular Font Stack */
 .HelveticaNeue{
@@ -156,7 +166,7 @@ td.price{
 .container {
 	width: 90%;
 	margin: 0 auto;
-	/*border: 1px solid purple;*/
+/*	border: 1px solid purple;*/
 }
 
 .full-width {
@@ -188,10 +198,14 @@ td.price{
 	padding:0;
 	margin-left: 14%;
 	margin-right: 16%;
-	display: block;
-/*	border: 2px solid red;*/
+	display: inline-block;
+/*	border: 5px solid red;*/
 
 }
+
+
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * */ 
 
@@ -1045,6 +1059,9 @@ content- left rail-- Products and Product Add ****************
 .product_list{
 	display: inline-block;
 	padding-top: 3em; /*(48px)*/
+/*	border: 2px solid green;*/
+
+
 
 }
 
@@ -1053,32 +1070,71 @@ ul.product_blocks{
 	margin:0;
 	padding-top: 4.25em; /*68px*/
 	list-style-type: none;
+	width: 100%;
 	
 }
 
 .product_blocks li{
 /*	border: 2px solid red;*/
-	display: inline;
-	float: left;
+	height: 23.8em;
+	width: 13.2em;
+
+
+
 }
 
 .product_blocks a{
 	display: inline-block;
 	padding: 0;
-	margin:0;
+	width: 100%;
+
 /*	border: 2px solid blue;*/
-}
-
-
-
-.product_blocks li{
 
 }
+
+
 
 
 
 .product_blocks img{
 	width: 202px;
+	margin: 0 auto;
+/*	border: 1px solid orange;
+*/	display: block;
+}
+
+
+
+div.block{
+	margin-bottom: 4em;
+	padding:0;
+	width: 33%;
+	display: block;
+	float:left;
+	/*border: 1px solid black;*/
+}
+
+
+
+
+.column1 li{
+	padding-right: 2em;
+	overflow: auto;
+}
+
+
+
+.column2 li{
+	float: none;
+	margin: auto;
+}
+
+
+
+
+
+.column3 li{ 
+	float:right;
 }
 
 
@@ -1086,15 +1142,19 @@ ul.product_blocks{
 
 
 
+
+/* variant tables stuff*/
+
 table.variant_list{
-	margin-top: 1.5em;
+	margin-top: 1.1em;
 	padding: 0;
 	width: 114%;
+/*	border: 1px solid orange;*/
 }
 
 table.variant_list td{
-	width: 33.33%;
-	height: 2.2em;
+	width: 4.625em;
+	height: 2em;
 }
 
 
@@ -1119,6 +1179,48 @@ td.draft{
 
 
 
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- right rail ****************
+........
+.....
+....
+*/
+
+
+/***************** Local Nav ******************/
+
+
+
+
+.local_nav{
+	position: fixed;
+}
+
+.local_nav h4{
+	margin-left: 3em;
+}
+
+
+.local_nav ul{
+	list-style-type: none;
+
+}
+
+.local_nav li a{
+	text-decoration: none;
+}
+
+.local_nav li{
+	line-height: 2em;
+}
 
 
 
