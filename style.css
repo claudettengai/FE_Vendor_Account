@@ -634,12 +634,24 @@ keeps product tab static*/
 
 
 
-/*getting rid of arrows*/
+/*getting rid of borders*/
 @media (max-width: 700px){
 	.nav_tab.completed::after, 
 	.nav_tab.Users::after {
-		border-left: 0;		
+		
+		margin-top: -3.24em;  
+
+		border-top: 1.6244em solid transparent;
+		border-left: 1.2em solid #84cdb6;
+		border-bottom: 1.62435em solid transparent;
+	
 	}
+
+	.nav_tab.Users::after{
+		border-left: 1.2em solid #c8e9de;
+	}
+
+
 
 
 	.nav_tab.completed::before,
@@ -649,48 +661,59 @@ keeps product tab static*/
 
 
 	.nav_tab a{
-		text-indent:0em;
+		text-indent:0.9em;
 		font-size: 1em;
-		width:98%;
-		margin-left:1%;
+		
+	}
+
+	
+
+
+	.Users a{
+		text-indent: 1.4em;
+	}
+
+
+	.Users a, 
+	.Payment a{
+		border-color: #c8e9de;
 	}
 
 	.Company a{
-		width: 98%;
-	}
-
-	.Users a{
-		margin-left: 1.5%;
+		border-color: #84cdb6;
 	}
 
 	.Products_tab a{
-		line-height: 3em;	/*keeping the same font size as all just bolded and outlined*/
-		border: .13em solid #127074;
-
+		line-height: 3.1em;	/*keeping the same font size as all just bolded and outlined*/
+		border-color: #84cdb6;
 	}
+
 
 
 
 	/*hover states*/
 	.nav_tab a:hover {
 		font-size: 1em;
-		width:98%;
-		line-height: 3em;	/*keeping the same font size as all just bolded and outlined*/
-		border: .13em solid #127074;
+
+		line-height: 3.1em;	/*keeping the same font size as all just bolded and outlined*/
+	
 
 	}
 
-	.Users a:hover{
-		width: 93%;
-		margin-left: 2%;
+
+	.Users a:hover, 
+	.Payment a:hover{
+		border-color: #c8e9de;
 	}
 
-
+	.Company a:hover{ 
+		border-color: #84cdb6;}
 
 	/*
 	keeps product tab static*/
 	.Products_tab a:hover{
-		text-indent: 0;
+		text-indent: .9em;
+		border-color: #84cdb6;
 	}
 
 
