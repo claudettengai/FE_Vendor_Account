@@ -97,7 +97,7 @@ p.prod_intro_text{
 	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
 	font-weight: normal;
 	font-size: .875em; /*(14px)*/
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #127074;
 	margin:0;
 
@@ -135,10 +135,23 @@ td.price{
 .local_nav li{
 	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
 	line-height: 33pt;
-	font-size: 14px;
+	font-size: .8125em;
 	text-transform: uppercase;
+	color: #4d4d4d;
 
 
+}
+
+@media (max-width: 1180px){
+	.local_nav li{
+		font-size: .75em ;
+	}
+}
+
+@media (max-width: 975px){
+	.local_nav li{
+		font-size: .72em ;
+	}
 }
 
 
@@ -190,6 +203,14 @@ td.price{
 	/*border: 2px solid red;*/
 
 }
+
+
+
+.right-rail.fixed_scroll{
+	position: fixed;
+	margin-left: 77%;
+}
+
 
 
 .main_content{
@@ -1098,7 +1119,7 @@ ul.product_blocks{
 }
 
 .product_blocks li{
-/*	border: 2px solid red;*/
+	/*border: 2px solid red;*/
 	height: 23.8em;
 	width: 13.2em;
 
@@ -1134,14 +1155,14 @@ div.block{
 	width: 33%;
 	display: block;
 	float:left;
-	/*border: 1px solid black;*/
+/*	border: 1px solid black;*/
 }
 
 
 
 
 .column1 li{
-	padding-right: 2em;
+	margin-right: 2em;
 	overflow: auto;
 }
 
@@ -1198,9 +1219,21 @@ td.draft{
 
 
 
+/*******MEDIA QUERIES*********/
+/*@media (max-width: 1180px){
+	div.block{
+		width:49%;
+	}
+
+	.column1 li,
+	.column2 li,
+	.column3 li {
+		float:none;
+		margin: auto;
+	}
 
 
-
+*/
 
 
 
@@ -1220,30 +1253,97 @@ content- right rail ****************
 
 /***************** Local Nav ******************/
 
-
-
-
 .local_nav{
-	position: fixed;
+	margin:6% 6% 0 7%;
+	padding:0;
+
+
 }
+
 
 .local_nav h4{
-	margin-left: 3em;
+	margin:1em 0 1.4em 0;
+	padding:0;
+	color: #127074;
+	text-align: center;
+
+}
+
+#list_and_check{
+	/*border: 1px solid black;*/
+	float: left;
+	width: 99%;
 }
 
 
-.local_nav ul{
+ul.prod_list{
+	margin:0;
+	padding:0;
 	list-style-type: none;
+	float: left;
+/*	border: 1px solid black;*/
+
 
 }
 
-.local_nav li a{
+ul.prod_list a{
 	text-decoration: none;
+	color: #4d4d4d;
 }
 
-.local_nav li{
-	line-height: 2em;
+
+
+.local_nav ul.prod_list li{
+	line-height: 2.5em;
 }
+
+
+.checkmarks {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	float: right;
+/*	border: 1px solid black;*/
+	margin-top: 2em;
+	/*margin-left: 2em;*/
+
+
+}
+
+
+.checkmarks li{
+	color: #127074;
+	line-height: 2.53em
+}
+
+
+.secondClump{
+	padding-top: 2em;
+}
+
+
+/*******MEDIA QUERIES*********/
+
+@media (max-width: 1180px){
+	.checkmarks{
+		line-height: 1.4em;
+	}
+
+	.secondClump{
+		padding-top: 1.5em;
+	}
+}
+
+
+/*******END MEDIA QUERIES*********/
+
+
+
+
+
+
+
+
 
 
 

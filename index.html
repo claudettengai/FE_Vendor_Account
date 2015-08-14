@@ -5,7 +5,9 @@
 <head>
 	<Title>Found Eats Product Profile</Title>
 	<link rel="stylesheet" href="style.css">
+	<script type='text/javascript' src='script.js'></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head> 
 	
 
@@ -143,14 +145,12 @@
 
 
 
-		<!-- ****INDIVIDUAL PRODUCTS -->
-			<!-- Ask Chris: 
-			When do I put lists into divs or keep them as uls?  -->
+
 
 
 		<div class= "main_content product_list">
 
-			<!-- <p class= "prod_intro_text"><span id= "items">6 ITEMS</span><span id= "text_divide"> | </span>Drag to sort</p> -->
+			<p class= "prod_intro_text"><span id= "items">6 ITEMS</span><span id= "text_divide"> | </span>Click to add and edit products, drag to sort order</p>
 			<!-- still figuring out how to configure this heading -->	
 			<!-- also do I want to make sort by a dropdown? --> 			
 
@@ -339,9 +339,11 @@
 <div class= "full-width right-rail">
 
 	<!-- ****Local Nav/ Checklist -->
-	<div class= "local_nav container">
+	<div class= "local_nav">
 		<h4>Your Products</h4>
-		<ul>
+
+		<div id= "list_and_check">
+		<ul class= "prod_list">
 			<li><a href= "#">Clementine Preserves</a></li>
 			<li><a href= "#">Springtime Blueberry Jam</a></li>
 			<li><a href= "#">Raspberry Jam</a></li>
@@ -349,8 +351,23 @@
 			<li><a href= "#">Pomegranate Jam</a></li>
 			<li><a href= "#">Pineapple Preserves</a></li>
 			<li><a href= "#">Table Water Crackers</a></li>
+			<li><a href= "#"><span style="color: #127074"> + Add Product</span></a></li>
 		</ul>
-	</div>
+
+
+
+	<ul class= "checkmarks">
+		<li>&#10003;</li>
+		<li>&#10003;</li>
+		<li>&#10003;</li>
+	
+		<div class= "secondClump"><li>&#10003;</li>
+		<li>&#10003;</li></div>
+	</ul>
+</div>
+
+</div>
+
 
 
 	<!-- ****ADD LATER -->
