@@ -29,7 +29,7 @@ h2 {
 h3{
 	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
 	font-size: 1.0625em;
-	color: #1a1a1a;
+	color: #333;
 	padding: .35em 0 .2em .15em;
 	margin:0;
 
@@ -155,6 +155,14 @@ td.price{
 }
 
 
+.draft_sign{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+	color: #4d4d4d;
+	font-size: 1.1875em;
+	text-align: center;	
+	text-transform: uppercase;
+}
+
 
 /* Helvetica Neue Regular Font Stack */
 .HelveticaNeue{
@@ -210,13 +218,13 @@ td.price{
 	position: absolute;
 	margin-left: 78%;
 	width: 21%;
-	margin-top: 5em;
+	margin-top: 4em;
 
 }
 
 .fixed_scroll{
 	position: fixed;
-	margin-top:-22.5em;
+	margin-top:-23.5em;
 }
 
 @media (max-width: 1100px){
@@ -1152,13 +1160,17 @@ ul.product_blocks{
 	display: inline-block;
 	padding: 0;
 	width: 100%;
-
+	text-decoration: none;
+	color: #4d4d4d;
 /*	border: 2px solid blue;*/
+
 
 }
 
-
-
+.product_blocks a:visited{
+	text-decoration: none;
+	color: #4d4d4d;
+}	
 
 
 .product_blocks img{
@@ -1169,6 +1181,16 @@ ul.product_blocks{
 }
 
 
+.draft_sign{
+	width: 211px;
+	line-height: 3.07em; /*at 1em = 19px; so 3.05em = 58px*/
+	margin-top: -3em;
+	background-color: rgba(255,255,255,.7);
+	position: absolute;
+}
+
+
+
 
 div.block{
 	margin-bottom: 4em;
@@ -1177,6 +1199,47 @@ div.block{
 	display: block;
 	float:left;
 	/*border: 1px solid black;*/
+}
+
+
+
+
+.pic_overlay{
+	background-color: rgba(255,255,255,.8);
+/*	background-color: rgba(0, 0, 0, .7);*/
+	text-align: center;
+	height: 211px;
+	width: 211px;
+	position: absolute;
+	line-height: 1.8em;
+	font-size: 1.25em;
+	font-weight: 600;
+
+
+}
+
+.hide{
+	display:none;
+}
+
+.xtra_space{
+	line-height: 2;
+}
+
+
+.live-or-draft{
+	color: #EC6766;
+	text-align: left;
+	display: block;
+	margin: 0 0 1em 1.2em;
+	text-transform: uppercase;
+/*	font-family: "Helvetica";*/
+	font-size: .7em;
+	font-weight: 500;
+}
+
+.divider-space{
+	margin: 0 .5em;
 }
 
 
@@ -1272,12 +1335,25 @@ td.draft{
 
 @media (max-width: 900px){
 	.product_list{
-/*		border: 1px solid black;*/
+		border: 1px solid black;
 		width: 90%;
 		margin-left: 5%;
 		margin-right:5%;
 		}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
