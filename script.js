@@ -15,23 +15,55 @@ $(document).ready(function(){
 		};
 
 
+
+
+// START
+
+
+		// var alertBottom = $('.alert_box').offset().top+$('.alert_box').outerHeight(true);
+  //       // console.log(alertBottom)
+
+
+
+    
+  //   	if (alertBottom == ($('.footer').offset().top)) {
+  //   		return $(document).offset().top;
+  
+  //   	};
+
+  //   	// console.log(fixedStopPoint); 
+
+
+
+  //   	// if (alertBottom <= $('.footer').offset.top){
+  //   	// 		$('right-rail').css({
+  //   	// 			position: absolute
+  //   	// 		});
+  //   	// };
+
+
+
+// STOP
+
+
+
 		$.fn.scrollBottom = function() { 
- 		 return $(document).height() - this.scrollTop() - this.height(); 
+ 		 	return $(document).height() - this.scrollTop() - this.height(); 
 		};
+
+
+
+
 
 		var fromBottom= $(window).scrollBottom();
 		// console.log(fromBottom);
-		var stop_scroll_bottom = $(document).height() - $(window).height() + 140; 
-		console.log(stop_scroll_bottom);
+		var stop_scroll_bottom = $(document).height() - $(window).height() +376 - 140;
+		//376 is for the negative margin on the right panel -- see CSS
+		// console.log(stop_scroll_bottom);
 
 
 
-
-
-
-
-
-		if(fromBottom<=140){
+		if(fromBottom<=141){
 			$('.right-rail').css({
 				position:'absolute',
 				top: stop_scroll_bottom,
@@ -40,24 +72,38 @@ $(document).ready(function(){
 
 
 
-
-
-		// Ask Chris -- how do I remove the above statement when fromBottom>140? I want the 
-		//scroll to act the way that it was acting before that statement.  
-
-
-
-
-
-
-		// if(fromBottom>140){
-		// 	$('.right-rail').css({
-		// 		position: 'fixed',
-
+		// if(fromBottom > 141){
+		// 	$('.right_rail').css({
+		// 		position: 'fixed'
 		// 	});
-		// };
-
 
 	});
+
+	
+
+////////////////HOVER SIDE BAR/////////////////////////
+
+
+	$('#banner_photo, .company_info').click(function(){
+		$('.alert_box').removeClass('hide');
+	});
+
+
+	$(function() {
+	    $( ".sortable" ).sortable();
+	    $( "sortable" ).disableSelection();
+	  });
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
