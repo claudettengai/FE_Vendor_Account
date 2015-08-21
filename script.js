@@ -17,35 +17,6 @@ $(document).ready(function(){
 
 
 
-// START
-
-
-		// var alertBottom = $('.alert_box').offset().top+$('.alert_box').outerHeight(true);
-  //       // console.log(alertBottom)
-
-
-
-    
-  //   	if (alertBottom == ($('.footer').offset().top)) {
-  //   		return $(document).offset().top;
-  
-  //   	};
-
-  //   	// console.log(fixedStopPoint); 
-
-
-
-  //   	// if (alertBottom <= $('.footer').offset.top){
-  //   	// 		$('right-rail').css({
-  //   	// 			position: absolute
-  //   	// 		});
-  //   	// };
-
-
-
-// STOP
-
-
 
 		$.fn.scrollBottom = function() { 
  		 	return $(document).height() - this.scrollTop() - this.height(); 
@@ -72,22 +43,26 @@ $(document).ready(function(){
 
 
 
-		// if(fromBottom > 141){
-		// 	$('.right_rail').css({
-		// 		position: 'fixed'
-		// 	});
-
 	});
+
+
+////////////////ALERT BOX SIDE BAR/////////////////////////
+
+
 
 	
 
-////////////////HOVER SIDE BAR/////////////////////////
+////////////////ALERT BOX SIDE BAR/////////////////////////
 
 
 	$('#banner_photo, .company_info').click(function(){
 		$('.alert_box').removeClass('hide');
 	});
 
+
+
+
+////////////////SORTABLE BLOCKS/////////////////////////
 
 	$(function() {
 	    $( ".sortable" ).sortable();
@@ -96,6 +71,22 @@ $(document).ready(function(){
 
 
 
+
+////////////////PRODUCT BLOCKS////////////////////////
+
+
+
+
+	$('.block a').mouseenter(function(){
+		$('.pic_overlay').animate({margin: 0, opacity:1}, 100);
+		$('.draft_sign').addClass('hide');
+
+	});
+
+	$('.block a').mouseleave(function(){
+		$('.pic_overlay').animate({marginTop: "-10px", opacity:0}, 100);
+		$('.draft_sign').removeClass('hide');
+	});
 
 
 
@@ -107,3 +98,33 @@ $(document).ready(function(){
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
