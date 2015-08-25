@@ -99,9 +99,10 @@ p.prod_intro_text{
 	font-size: .875em; /*(14px)*/
 	/*text-transform: uppercase;*/
 	color: #127074;
-	margin:0;
+	margin-left: 5%;
 
 }
+
 
 p.prod_intro_text #items{
 	font-weight: bold;
@@ -110,6 +111,14 @@ p.prod_intro_text #items{
 p.prod_intro_text #text_divide{
 	margin: 0 1em;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -261,7 +270,7 @@ td.price{
 	margin-left: 14%;
 	margin-right: 11%;
 	display: inline-block;
-	/*border: 1px solid red;*/
+/*	border: 1px solid red;*/
 
 }
 
@@ -1149,8 +1158,8 @@ content- left rail-- Products and Product Add ****************
 	padding-top: 3em; /*(48px)*/
 /*	border: 2px solid green;*/
 	padding-bottom: 4em;
-	width: 78%;
-	margin-left: 13%;
+	width: 89%;
+	margin-left: 5.5%;
 
 
 }
@@ -1169,6 +1178,8 @@ ul.product_blocks{
 /*	border: 2px solid red;*/
 	height: 23.8em;
 	width: 13.2em;
+	float: none;
+	margin: auto;
 
 
 
@@ -1216,7 +1227,7 @@ div.block{
 	width: 33%;
 	display: block;
 	float:left;
-	/*border: 1px solid black;*/
+/*	border: 1px solid black;*/
 }
 
 
@@ -1262,30 +1273,6 @@ div.block{
 
 
 
-.column1 li{
-	margin-right: 2em;
-	
-
-}
-
-
-
-.column2 li{
-	float: none;
-	margin: auto;
-}
-
-
-
-
-
-.column3 li{ 
-	float:right;
-}
-
-
-
-
 
 
 
@@ -1323,31 +1310,25 @@ td.draft{
 
 /*******MEDIA QUERIES*********/
 @media (min-width: 900px) and (max-width: 1180px){
+	
+
+	p.prod_intro_text{
+		margin-left: 10%;
+	}
+
+
 	div.block{
 		width:50%;
 	}
 
-	.column1 li,
-	.column2 li,
-	.column3 li {
-		float:none;
-		margin: auto;
-	}
-
 
 	.product_list{
-		margin-left: 11%;
+		margin-left: 4%;
 	}
 
 
 }
 
-/*.b1 li,
-.b3 li,
-.b5 li,
-.b7 li{
-	float:left;
-}*/
 
 
 
@@ -1355,27 +1336,40 @@ td.draft{
 	.product_list{
 /*		border: 1px solid black;*/
 		width: 90%;
-		margin-left: 5%;
-		margin-right:5%;
+		margin-left: 3.5%;
+
+		}
+
+
+
+		p.prod_intro_text{
+			margin-left: 5%;
 		}
 }
 
 @media (max-width: 770px){
-	div.block{
-		width: 50%;
+
+	p.prod_intro_text{
+		margin-left: 10%;
 	}
 
 
-	.column1 li,
-	.column2 li,
-	.column3 li {
-		float:none;
-		margin: auto;
+	div.block{
+		width: 50%;
 	}
 
 }
 
 @media (max-width: 550px){
+
+
+	p.prod_intro_text{
+		margin-left: 24%;
+
+	}
+
+
+
 	div.block{
 		width:100%;
 	}
@@ -1397,6 +1391,9 @@ td.draft{
 	.b4 li{
 		height: 22em;
 	}
+
+
+
 }
 
 
@@ -1512,6 +1509,8 @@ td.checkmarks{
 	font-size: .9375em;
 	line-height: 1.5em;
 	padding-bottom: 1em;
+
+
 
 }
 
