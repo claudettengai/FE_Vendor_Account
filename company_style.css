@@ -1,4 +1,12 @@
 
+/****************** Progress Bar ***************/
+
+/*
+Products_tab now refers to just the current page.
+In this case, Products_tab is now assigned to 
+the tab labeled "Company". Company is now
+assigned to the tab labeled "Products"*/
+
 .Products_tab a,
 .Products_tab a:hover{
 	text-indent: 0;
@@ -20,6 +28,9 @@
 }
 
 
+
+/** Progress bar MEDIA QUERIES**/
+
 @media (max-width: 700px){
 	.Company a,
 	.Company a:hover{
@@ -29,7 +40,156 @@
 	.nav_tab.Company::before {
 		border-left: 0;
 	}
+}
+/** Media Queries End **/
 
+
+
+
+/****************** Main Content - Company Info ***************/
+
+
+#banner_photo{
+	position: static;
 
 
 }
+/*
+.banner{
+	border: 3px solid yellow;
+	background-color: black;
+}*/
+
+.banner_overlay{
+	background-color: rgba(255,255,255,.8);
+	position: absolute;
+	width: 77%;
+	text-align: center;
+	font-size: 24px;
+	color: #4d4d4d;
+	font-weight: 600;
+	opacity:0;
+}
+
+.fa-camera{
+	color: #4d4d4d;
+	margin: 0 1em 0 0;
+}
+
+
+p.descript_text{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-size: .875em; /*14px*/
+  	line-height : 25px;
+  	padding: 2em 2em 4em 2em;
+
+}
+
+
+#description{
+	margin-top: 1em;
+	margin-left: -3em;
+
+}
+
+#description:hover{
+	box-shadow: 0px 0px 2px 2px #84cdb6;
+}
+
+
+.fa-pencil{
+	color: #127074;
+	float: right;
+	margin-top: -3.5em;
+	margin-right: 1.8em;
+
+}
+
+
+
+
+
+/** Description tab media Queries**/
+
+@media (min-width: 901px) and (max-width: 1150px){
+
+
+	.prod_gall_tabs{
+		display: inline-block;
+	}
+
+	.prod_gall_tabs{
+		float: right;
+	}
+
+	#description{
+		display: inline-block;
+		margin-top: -0.5em;
+	}
+}
+
+
+/** End media Queries**/
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- right rail ****************
+........
+.....
+....
+*/
+
+
+/***************** Local Nav ******************/
+
+#list_and_check{
+	width: 74%;
+	margin-left: 15%;
+}
+
+
+.local_nav h4{
+	margin-bottom: 1.2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	line-height: 1.5em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
