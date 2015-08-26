@@ -326,8 +326,27 @@ Header!
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
+	color: #127074; 
+
 /*	border: 1px solid black;*/
 }
+
+#User li{
+	position: absolute;
+	color: #127074; 
+	font-size: 13px;
+	margin-top: 2px;
+}
+
+
+ul#menu{
+	background: none;
+	border: 1px #c8e9de;
+}
+
+
+
+
 
 
 /*visited link*/
@@ -340,7 +359,18 @@ Header!
     text-decoration: underline;
 }
 
+#User a:hover{
+	text-decoration: none;
+}
 
+
+
+
+
+
+.fa-caret-down{
+	margin-left: 4px;
+}
 
 
 
@@ -494,7 +524,7 @@ p#title_subtext{
 	margin:0;
 	margin-top: 1.5em;
 	font-size: 1.125em; /*(of 1em=16px)*/
-	color: #127074;
+	color: #EC6766;
 }
 
 
@@ -1210,6 +1240,38 @@ ul.product_blocks{
 }
 
 
+
+#add_prod_block{
+	width:210px;
+	height: 210px;
+	margin: 0 auto;
+	display: block;
+	background-color: #c8e9de;
+	border: 2px solid #127074;
+
+}
+
+
+#add_prod_text{
+	font-size: 28px;
+	text-align: center;
+	line-height: 48px;
+	color: #127074;
+	padding-top: 18px;
+
+}
+
+#plus_sign{
+	font-size: 69px;
+	padding-left: 2px;
+	margin-bottom: 20px;
+	line-height: 100px;
+
+}
+
+
+
+
 .draft_sign{
 	width: 211px;
 	line-height: 3.07em; /*at 1em = 19px; so 3.05em = 58px*/
@@ -1303,6 +1365,7 @@ td.draft{
 .block5 td.draft{
 	padding-left: 0;
 }
+
 
 
 

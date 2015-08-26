@@ -7,7 +7,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" href="style.css">
+
 	<script type='text/javascript' src='script.js'></script>
 
 
@@ -47,7 +52,11 @@
 					<li class= "right_nav">
 						<ul>
 							<li id= "Orders_btn"><a href = "#">Orders</a></li>
-							<li id= "User"><a href= "#">Leah Rey</a></li>
+							<li id= "User"><a href= "#">Leah Rey <i class="fa fa-caret-down"></i>
+								<ul id= "menu" class= "hide HelveticaNeue">
+									<li>Log Out</li>
+								</ul>
+							</a></li>
 							<!-- dropdown arrow: font awesome -->
 						</ul>
 					</li>
@@ -56,8 +65,6 @@
 
 			<a href= "#" id="FE_logo"><img src= "img/FE_logo_full" id="FE_logo"></a>
 		</nav>
-
-
 		<!-- line break -->
 
 		<hr class= "container"></hr>
@@ -73,8 +80,9 @@
 		<!-- **** progress bar -->
 		<div class= "progress_bar .HelveticaNeue">
 			<ul>
-				<li class= "Company completed nav_tab"><a href= "#">Company</a></li>
-				<li class= "Products_tab completed nav_tab"><a href= "#">Products</a></li>
+				
+				<li class= "Products_tab completed nav_tab"><a href= "#">Company</a></li>
+				<li class= "Company completed nav_tab"><a href= "#">Products</a></li>
 				<li class= "Users incomplete nav_tab"><a href= "#">Users</a></li>
 				<li class= "Payment incomplete nav_tab"><a href= "#">Payment</a></li>
 			</ul>
@@ -350,8 +358,9 @@
 
 				<!-- **** Add Product -->
 				<div class= "block bAdd column2"><li>
-					<a href= "#" target = "blank"><img src="img/add-product-block.png"></a>
+					<a href= "#" target = "blank"><div id= "add_prod_block"><div id= "add_prod_text" class= "HelveticaNeueMedium"><span id= "plus_sign">+<br></span>Add Product </div></div></a>
 				</li></div>
+
 
 			</ul> <!-- individual products -->
 
@@ -378,19 +387,18 @@
 
 	<!-- ****Local Nav/ Checklist -->
 	<div class= "local_nav">
-		<h4>Your Products</h4>
+		<h4>Complete Your Company Profile</h4>
 
 		<div id= "list_and_check">
 
  			<table class= "right_prod_list">
-				<tr><td><a href= "#">Clementine Preserves</a></td><td></td></tr>
-				<tr><td><a href= "#">Springtime Blueberry...</a></td><td class= "checkmarks">&#10003;</td></tr>
-				<tr><td><a href= "#">Raspberry Jam</a></td><td class= "checkmarks">&#10003;</td></tr>
-				<tr><td><a href= "#">Grape Jam</a></td><td class= "checkmarks">&#10003;</td></tr>
-				<tr><td><a href= "#">Pomegranate Jam</a></td><td class= "checkmarks"></td></tr>
-				<tr><td><a href= "#">Pineapple Preserves</a></td><td class= "checkmarks">&#10003;</td></tr>
-				<tr><td><a href= "#">Table Water Crackers</a></td><td class= "checkmarks">&#10003;</td></tr>
-				<tr><td><a href= "#"><span style="color: #127074"><strong> + Add Product</strong></span></a></td><td></td></tr>
+				<tr><td><a href= "#">Banner Photo</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a href= "#">Logo</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a href= "#">Company Name</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a href= "#">Location</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a href= "#">Social Links</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a href= "#">Description</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a href= "#">Gallery</a></td><td class= "checkmarks">&#10003;</td></tr>
 			</table>
 
 		</div>

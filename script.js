@@ -1,5 +1,26 @@
 $(document).ready(function(){
 
+	////////////////USER DROPDOWN "LEAH REY"/////////////////////////
+
+	$(function() {
+	    $( "#menu" ).menu();
+	  });
+
+	$("#User").mouseenter(function(e){
+		$("#User #menu").removeClass('hide');
+		e.stopPropagation();
+
+	});
+
+
+	
+	$('#User').on('mouseleave', function(){
+			$("#User #menu").addClass('hide')
+
+	});
+	
+
+
 
 
 	////////////////ALERT BOX SIDE BAR/////////////////////////
@@ -61,17 +82,6 @@ $(document).ready(function(){
 				});
 			};
 		};
-
-
-		if(fromBottom<=141){
-			if (! $('.alert_box').hasClass('hide')){
-				$('.right-rail').css({
-					position:'absolute',
-					top: stop_scroll_bottom,
-				});
-			};
-		};
-
 
 
 

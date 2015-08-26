@@ -4,11 +4,19 @@
 
 <head>
 	<Title>Found Eats Product Profile</Title>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-		<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 	<script type='text/javascript' src='script.js'></script>
+
+	<link rel="stylesheet" href="style.css">
+
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +50,11 @@
 					<li class= "right_nav">
 						<ul>
 							<li id= "Orders_btn"><a href = "#">Orders</a></li>
-							<li id= "User"><a href= "#">Leah Rey</a></li>
+							<li id= "User"><a href= "#">Leah Rey <i class="fa fa-caret-down"></i>
+								<ul id= "menu" class= "hide HelveticaNeue">
+									<li>Log Out</li>
+								</ul>
+							</a></li>
 							<!-- dropdown arrow: font awesome -->
 						</ul>
 					</li>
@@ -328,7 +340,7 @@
 						<div class="pic_overlay"><span class= "live-or-draft">Live  <span class= "divider-space"></span></span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div>
 						<img src= "img/product7.png">
 					</a>
-					
+
 					<h3>Table Water Crackers</h5>
 					<h6>Preserving SF</h6>
 
@@ -345,7 +357,7 @@
 
 				<!-- **** Add Product -->
 				<div class= "block bAdd column2"><li>
-					<a href= "#" target = "blank"><img src="img/add-product-block.png"></a>
+					<a href= "#" target = "blank"><div id= "add_prod_block"><div id= "add_prod_text" class= "HelveticaNeueMedium"><span id= "plus_sign">+<br></span>Add Product </div></div></a>
 				</li></div>
 
 			</ul> <!-- individual products -->
@@ -364,14 +376,14 @@
 
 
 	<!-- NOTES::: 
-	have to add elemeent FAQ's/ Descriptions for hover/ click states	
+	have to add elemeent FAQ's/ Descriptions for hover/ click states	-->
 
-	Ask Chris:
-	how do you do checkmarks? -->
+
 
 <div class= "full-width right-rail">
 
-	<!-- ****Local Nav/ Checklist -->
+
+<!-- ****Local Nav/ Checklist -->
 	<div class= "local_nav">
 		<h4>Your Products</h4>
 

@@ -1,0 +1,35 @@
+
+.Products_tab a,
+.Products_tab a:hover{
+	text-indent: 0;
+
+}
+
+
+.Company a{
+	background-color: #c8e9de;
+	text-indent: 2em ;
+}
+
+.nav_tab.Company::after{
+	border-left: 2.54em solid #c8e9de;  
+}
+
+.nav_tab.Company::before{
+	border-left: 2.74em solid white;
+}
+
+
+@media (max-width: 700px){
+	.Company a,
+	.Company a:hover{
+		border-color: #c8e9de;
+	}
+
+	.nav_tab.Company::before {
+		border-left: 0;
+	}
+
+
+
+}
