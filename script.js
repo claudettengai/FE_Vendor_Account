@@ -32,9 +32,43 @@ $(document).ready(function(){
 	////////////////ALERT BOX SIDE BAR/////////////////////////
 
 
-	$('#banner_photo, .company_info').click(function(){
-		$('.alert_box').removeClass('hide');
+	// $('#banner_photo, .company_info').click(function(){
+	// 	$('.alert_box').removeClass('hide');
+	// });
+
+
+
+	////////////////Right-Hand Panel Button/////////////////////////
+	
+	
+
+	$('#local_nav_button').click(function(event){
+		// console.log('hello')
+		event.stopPropagation();
+		$('.right-rail').css({'visibility': 'visible'})
+	})
+
+
+	$(document).click(function(){
+		if ($(".button_hide").css('opacity') == 1) {
+			$('.right-rail').css({'visibility': 'hidden'})
+		};
+		$(window).resize(function(){
+			if (($(".button_hide").css('opacity') == 0) && ($('.right-rail').css('visibility') == 'hidden')){
+				$('.right-rail').css({ 'visibility' : 'visible'})
+			};
+
+			if ($(".button_hide").css('opacity') == 1) {
+				$('.right-rail').css({'visibility':'hidden'})
+			};
+		});
+
+
 	});
+
+
+
+
 
 
 
@@ -122,17 +156,17 @@ $(document).ready(function(){
 
 
 		
-		if (! $('.alert_box').hasClass('hide')){
-			if ($('.right-rail').css("position", "absolute")) {
-				if(fromBottom>141){
-					console.log('hello');
-					$('.right-rail').css({
-						position:'fixed',
-						// "margin-top": -376,
-					});
-				};
-			};
-		};
+		// if (! $('.alert_box').hasClass('hide')){
+		// 	if ($('.right-rail').css("position", "absolute")) {
+		// 		if(fromBottom>141){
+		// 			console.log('hello');
+		// 			$('.right-rail').css({
+		// 				position:'fixed',
+		// 				// "margin-top": -376,
+		// 			});
+		// 		};
+		// 	};
+		// };
 
 
 
@@ -145,9 +179,9 @@ $(document).ready(function(){
 ////////////////ALERT BOX SIDE BAR/////////////////////////
 
 
-	$('#banner_photo, .company_info').click(function(){
-		$('.alert_box').removeClass('hide');
-	});
+	// $('#banner_photo, .company_info').click(function(){
+	// 	$('.alert_box').removeClass('hide');
+	// });
 
 
 

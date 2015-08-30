@@ -49,13 +49,15 @@ $(document).ready(function(){
 
 
 
+
+
 ////////////////ALERT BOX/////////////////////////
 
 
 
-	$('#description').click(function(){
-		$('.alert_box').removeClass('hide');
-	});
+	// $('#description').click(function(){
+	// 	$('.alert_box').removeClass('hide');
+	// });
 
 
 

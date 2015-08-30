@@ -159,7 +159,7 @@ td.price{
 
 @media (max-width: 975px){
 	.local_nav td{
-		font-size: .72em ;
+		font-size: .8125em ;
 	}
 }
 
@@ -1511,7 +1511,9 @@ content- right rail ****************
 
 
 
-
+.button_hide{
+	opacity: 0;
+}
 
 
 table.right_prod_list{
@@ -1593,27 +1595,65 @@ td.checkmarks{
 
 
 	
-	/*.local_nav{
-		background-color: white;
-		padding: 0 3em 2em 0 ;
-	}*/
+	.local_nav{
+		padding: 0;
+		margin:0;
+		margin-bottom: 2em;
+	}
 
+	#local_nav_button h4{
+		padding: 0;
+		margin:0;
+		font-size: 85%;
 
-	.right-rail{
-		margin-left: 75%;
 	}
 
 
+	.button_hide{
+		opacity: 1;
+	}
+
+	h4{ 
+		margin: 0;
+		padding: 0;
+	}
+
+
+	table.right_prod_list a{
+		color: #000;
+	}
+
+	.fixed_scroll{
+		margin-top: -18.5em;
+	}
+
+	.right-rail{
+		margin-left: 0%;
+		/*background-color: rgba(132, 205, 182, .75);*/
+		background-color: rgba(255, 255, 255, .97);
+		padding:0;
+		width: 100%;
+		visibility: hidden;
+
+	}
+
+	#list_and_check{
+		width: 50%;
+		margin-left:25%;
+	/*	background-color: rgba(255, 255, 255, .6);*/
+	}
 
 
 	#local_nav_button{
-		height: 1.5em;
-		width: 6em ;
-		border: 2px solid #84cdb6;
-		background-color: white;
+		line-height: 2em;
+		width: 6.5em ;
+		border: 1px solid #127074;
+		background-color: rgba(255, 255, 255, .5);
 		margin-left: 75%;
 		margin-top: 1.5em;
 		position: absolute;
+		color: #127074;
+		text-align: center;
 
 
 	}
