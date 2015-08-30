@@ -253,11 +253,7 @@ td.price{
 	}
 }
 
-@media (max-width: 900px){
-	.right-rail{
-		display: none;
-	}
-}
+
 
 
 
@@ -334,8 +330,9 @@ Header!
 #User li{
 	position: absolute;
 	color: #127074; 
-	font-size: 13px;
-	margin-top: 2px;
+	font-size: 14px;
+	margin-top: 5px;
+
 }
 
 
@@ -1581,6 +1578,8 @@ td.checkmarks{
 
 
 
+/***************** Right-rail button ******************/
+
 
 
 
@@ -1589,6 +1588,46 @@ td.checkmarks{
 
 
 /*******MEDIA QUERIES*********/
+
+@media (max-width:900px){
+
+
+	
+	/*.local_nav{
+		background-color: white;
+		padding: 0 3em 2em 0 ;
+	}*/
+
+
+	.right-rail{
+		margin-left: 75%;
+	}
+
+
+
+
+	#local_nav_button{
+		height: 1.5em;
+		width: 6em ;
+		border: 2px solid #84cdb6;
+		background-color: white;
+		margin-left: 75%;
+		margin-top: 1.5em;
+		position: absolute;
+
+
+	}
+
+
+}
+
+
+
+@media (max-width:500px){
+	#local_nav_button{
+		display:none;
+	}
+}
 
 
 

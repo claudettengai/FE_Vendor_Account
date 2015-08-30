@@ -6,9 +6,9 @@ $(document).ready(function(){
 	    $( "#menu" ).menu();
 	  });
 
-	$("#User").mouseenter(function(e){
+	$("#User").mouseenter(function(){
 		$("#User #menu").removeClass('hide');
-		e.stopPropagation();
+		// e.stopPropagation();
 
 	});
 
@@ -20,6 +20,12 @@ $(document).ready(function(){
 	});
 	
 
+	////////////////Links to nowhere/////////////////////////
+
+	$('.nowhere').click(function (event) { 
+	     event.preventDefault(); 
+	 
+	});
 
 
 
@@ -31,7 +37,8 @@ $(document).ready(function(){
 	});
 
 
-		////////////////RIGHT PANEL SCROLL/////////////////////////
+
+	////////////////RIGHT PANEL SCROLL/////////////////////////
 
 
 
@@ -39,7 +46,9 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 
 		var fromTop= $(this).scrollTop();
+		// $(this) is window
 		// console.log(fromTop);
+		
 
 		if(fromTop > 426){
 			$('.right-rail').addClass("fixed_scroll");
@@ -50,6 +59,31 @@ $(document).ready(function(){
 			$('.right-rail').removeClass('fixed_scroll');
 		};
 
+
+
+		 if(fromTop >= ($('.co_name_location').position().top - 10)) {
+		 	$('#local_nav_button').css({
+		 		"margin-top": 0- $(window).height() + ($(window).height() - $('.co_name_location').position().top) + 30,
+
+
+		 		position: 'fixed',		 		
+		 	});
+		 };
+
+
+		 if(fromTop < ($('.co_name_location').position().top - 10)) {
+		 	$('#local_nav_button').css({
+		 		"margin-top": 20,
+
+		 		position: 'absolute',		 		
+		 	});
+		 };
+
+		
+
+
+
+		////////////////RIGHT PANEL SCROLL/////////////////////////
 
 
 
@@ -74,12 +108,29 @@ $(document).ready(function(){
 
 
 
-		if(fromBottom<=141){
-			if (! $('.alert_box').hasClass('hide')){
+		if (! $('.alert_box').hasClass('hide')){
+
+			if(fromBottom<=141) {
+			
 				$('.right-rail').css({
 					position:'absolute',
 					top: stop_scroll_bottom,
+				
 				});
+			};
+		};
+
+
+		
+		if (! $('.alert_box').hasClass('hide')){
+			if ($('.right-rail').css("position", "absolute")) {
+				if(fromBottom>141){
+					console.log('hello');
+					$('.right-rail').css({
+						position:'fixed',
+						// "margin-top": -376,
+					});
+				};
 			};
 		};
 
@@ -130,6 +181,16 @@ $(document).ready(function(){
 
 
 
+
+
+////////////////Right RAil -- Local Nav////////////////////////
+
+
+	
+	// console.log($('.co_name_location').offset().top)
+
+
+	// $('#local_nav_button').css({top: ''})
 
 
 

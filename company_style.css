@@ -54,25 +54,40 @@ assigned to the tab labeled "Products"*/
 
 
 }
-/*
-.banner{
-	border: 3px solid yellow;
-	background-color: black;
-}*/
+
+
 
 .banner_overlay{
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.85);
 	position: absolute;
 	width: 77%;
 	text-align: center;
 	font-size: 24px;
-	color: #4d4d4d;
+	color: #127074;
 	font-weight: 600;
 	opacity:0;
 }
 
+
+
+
+/** Banner Media Queries! **/
+
+@media (max-width: 900px){
+	.banner_overlay{
+		width: 100%;
+	}
+}
+
+/** Media Queries End **/
+
+
+
+
+
+
 .fa-camera{
-	color: #4d4d4d;
+	color: #127074;
 	margin: 0 1em 0 0;
 }
 
@@ -104,6 +119,43 @@ p.descript_text{
 	margin-right: 1.8em;
 
 }
+
+
+
+#logo{
+/*	border: 3px solid black;*/
+	/*height: 142px;
+	margin-top: -75px;*/
+	display: inline-block;
+	
+}
+
+
+
+.logo_overlay{
+	background-color: rgba(255,255,255,.8);
+	position: absolute;
+	width: 150px;
+	height: 148px;
+	margin-top: -75px;
+	text-align: center;
+	font-size: 24px;
+	color: #127074;
+	font-weight: 600;
+	opacity:0;
+
+}
+
+
+#logo .fa-camera{
+	margin:1.85em 0 .3em 0;
+}
+
+
+
+
+
+
 
 
 
