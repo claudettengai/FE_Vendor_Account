@@ -447,7 +447,7 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #84cdb6;
+    border: 1px solid #127074;
 
 }
 
@@ -556,14 +556,27 @@ p#title_subtext{
 	}
 
 
+.Company a{
+	background-color: #127074;
+	color: white;
+}
+
+
 .Products_tab a{
-	color: #127074;
+	color: white;
 	font-weight: bold;
 	font-size: 1.875em; /*(of 1em = 16px; 1.875em= 30px)*/
 	line-height: 2.66666em; /*(of 1em = 30px; 2.66em= 80px)*/
 	border: .08em solid white;
 	text-indent: 1.5em;
+	background-color: #127074;
 }
+
+	.Products_tab::after{
+		border-left: 2.54em solid #127074;
+
+
+	}
 
 
 .Users a{
@@ -572,7 +585,7 @@ p#title_subtext{
 
 
 .incomplete.nav_tab a{
-	background-color: #c8e9de;
+	background-color: #84cdb6;
 }
 
 .nav_tab.completed::after, 
@@ -585,7 +598,7 @@ p#title_subtext{
   	width: 0;
 	height: 0;
 	border-top: 2.5em solid transparent;
-	border-left: 2.9em solid #84cdb6;
+	border-left: 2.9em solid #127074;
 	border-bottom: 2.5em solid transparent;
 
 }
@@ -608,7 +621,7 @@ p#title_subtext{
 
 
 .nav_tab.Users::after {
-	border-left: 2.9em solid #c8e9de;
+	border-left: 2.9em solid #84cdb6;
 }
 
 
@@ -626,7 +639,7 @@ p#title_subtext{
 /*
 keeps product tab static*/
 .Products_tab a:hover{
-	color: #127074;
+	color: white;
 	font-weight: bold;
 	font-size: 1.875em; /*(of 1em = 16px; 1.875em= 30px)*/
 	line-height: 2.66666em; /*(of 1em = 30px; 2.66em= 80px)*/
@@ -653,7 +666,7 @@ keeps product tab static*/
 
 
 	.Products_tab a{
-		color: #127074;
+		color: white;
 		font-weight: bold;
 		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
 		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
@@ -662,13 +675,18 @@ keeps product tab static*/
 	}
 
 
+
+
+
+
+
 	.Users a{
 		text-indent: 2em;
 	}
 
 
 	.incomplete.nav_tab a{
-		background-color: #c8e9de;
+		background-color: #84cdb6;
 	}
 
 	.nav_tab.completed::after, 
@@ -681,14 +699,15 @@ keeps product tab static*/
 	  	width: 0;
 		height: 0;
 		border-top: 1.95em solid transparent;
-		border-left: 2.54em solid #84cdb6;
+		border-left: 2.54em solid #127074;
 		border-bottom: 1.95em solid transparent;
 
 	}
 
 
+
 	.nav_tab.Users::after {
-		border-left: 2.54em solid #c8e9de;
+		border-left: 2.54em solid #84cdb6;
 	}
 
 	.nav_tab.completed::before,
@@ -743,13 +762,13 @@ keeps product tab static*/
 		margin-top: -3.24em;  
 
 		border-top: 1.6244em solid transparent;
-		border-left: 1.2em solid #84cdb6;
+		border-left: 1.2em solid #127074;
 		border-bottom: 1.62435em solid transparent;
 	
 	}
 
 	.nav_tab.Users::after{
-		border-left: 1.2em solid #c8e9de;
+		border-left: 1.2em solid #84cdb6;
 	}
 
 
@@ -815,7 +834,10 @@ keeps product tab static*/
 	.Products_tab a:hover{
 		text-indent: .9em;
 		border-color: #84cdb6;
+		color: white;
 	}
+
+
 
 
 }
@@ -1630,7 +1652,7 @@ td.checkmarks{
 	.right-rail{
 		margin-left: 0%;
 		/*background-color: rgba(132, 205, 182, .75);*/
-		background-color: rgba(255, 255, 255, .97);
+		background-color: rgba(255, 255, 255, .9);
 		padding:0;
 		width: 100%;
 		visibility: hidden;
@@ -1699,7 +1721,8 @@ div.footer{
 
 div#green_bar{
 	height: 8em;
-	background-color: #84cdb6;
+	/*background-color: #84cdb6;*/
+	background-color: #127074;
 	clear: both;
 
 }

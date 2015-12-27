@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 	$(document).click(function(){
 		if ($(".button_hide").css('opacity') == 1) {
-			$('.right-rail').css({'visibility': 'hidden'})
+			$('.right-rail').css({'visibility': 'hidden'});
 		};
 		$(window).resize(function(){
 			if (($(".button_hide").css('opacity') == 0) && ($('.right-rail').css('visibility') == 'hidden')){

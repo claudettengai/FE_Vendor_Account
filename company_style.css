@@ -226,7 +226,12 @@ content- right rail ****************
 
 
 
-
+@media (max-width:900px){
+	#list_and_check{
+		width: 60%;
+		margin-left: 20%;
+	}
+}
 
 
 
