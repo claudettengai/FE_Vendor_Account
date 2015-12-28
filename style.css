@@ -738,7 +738,11 @@ keeps product tab static*/
 	/*
 	keeps product tab static*/
 	.Products_tab a:hover{
+<<<<<<< HEAD
 		color: #127074;
+=======
+		color: white;
+>>>>>>> master
 		font-weight: bold;
 		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
 		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
