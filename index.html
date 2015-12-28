@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<Title>Found Eats Product Profile</Title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script type='text/javascript' src='script.js'></script>
+
+	<link rel="stylesheet" href="style.css">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head> 
+	
+
+
+
+<body>
+
+
+
+<!-- * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * 
+	* * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
+
+
+	<header> 
+
+		<!-- ****  nav very top -->
+		<nav class= "top_nav full-width HelveticaNeueMedium">
+
+			<div class="container">
+				<ul class= "nav_row">
+					<li class= "left_nav">
+						<ul>
+							<li id= "Dash_btn"><a class= "nowhere"  href="#">Dashboard</a></li>
+							<li id= "FAQ"><a class= "nowhere"  href= "#">FAQ</a></li>
+						</ul>
+					</li>
+					<li class= "right_nav">
+						<ul>
+							<li id= "Orders_btn"><a class= "nowhere"  href = "#">Orders</a></li>
+							<li id= "User"><a class= "nowhere"  href= "#">Leah Rey <i class="fa fa-caret-down"></i>
+								<ul id= "menu" class= "hide HelveticaNeue">
+									<li>Log Out</li>
+								</ul>
+							</a></li>
+							<!-- dropdown arrow: font awesome -->
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<a class= "nowhere"  href= "#" id="FE_logo"><img src= "img/FE_logo_full" id="FE_logo"></a>
+		</nav>
+
+
+		<!-- line break -->
+
+		<hr class= "container"></hr>
+
+
+
+		<!-- ****  Title and text -->
+		<div id= "title_text">
+			<h1><span class= "Step2">Step 2 : </span>Product Profile</h1>
+			<p id= "title_subtext">Just 2 more steps to go!</p>
+		</div>
+
+		<!-- **** progress bar -->
+		<div class= "progress_bar .HelveticaNeue">
+			<ul>
+				<li class= "Company completed nav_tab"><a href= "company.html">Company</a></li>
+				<li class= "Products_tab completed nav_tab"><a class= "nowhere"  href= "#">Products</a></li>
+				<li class= "Users incomplete nav_tab"><a class= "nowhere"  href= "#">Users</a></li>
+				<li class= "Payment incomplete nav_tab"><a class= "nowhere"  href= "#">Payment</a></li>
+			</ul>
+		</div>
+
+	</header>
+
+
+
+
+
+
+
+<!-- * * * * * * * * * * * MAIN CONTENT * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
+
+
+
+
+	<div class= "left-rail"> 
+
+		<img id="banner_photo" class="full-width" src="img/preserving-sf-banner.png">
+
+		<div class= "main_content">
+
+
+			<div class= "company_info"> 
+			<!-- This container starts with logo and ends with text - it has a negative right margin  -->
+
+
+			<!-- logo and social block -->
+				<div class= "logo_and_social">
+					<img id= "preserving_sf_logo" src = "img/preserving sf logo.png">
+					<div class= "social_row">
+						<ul>
+							<li><a class= "nowhere"  href= "#"><img src= "img/facebook-grey.png"></a></li>
+							<li><a class= "nowhere"  href= "#"><img src = "img/pinterest-grey.png"></a></li>
+							<li><a class= "nowhere"  href= "#"><img src= "img/twitter-grey.png"></a></li>
+						</ul>
+					</div>
+				</div> 
+
+
+				<!-- Company Name and Location -->
+				<div class= "co_name_location">
+					<h2>Preserving SF</h2>
+					<h6>San Francisco, CA</h6>
+				</div>
+
+
+
+
+			<!-- 	right rail button after media queries 900 -->
+
+				<div id= "local_nav_button" class= "button_hide"><h4>Page Set-up</h4></div>
+
+
+			<!-- Description and Product/Gallery Tabs -->
+			<div class = "prod_gall_descript">
+				<div class= "prod_gall_tabs">
+					<ul>
+						<li class= "prod_tab"><h5><span class= "num">7</span><br>Products</h5><hr class= "underline_green"></hr></li>
+						<li class= "gall_tab"><h5><span class= "num">3</span><br>Gallery Items</h5><hr class= "underline_grey"></hr></li>
+					</ul>
+				</div>	
+				<div id= "description">
+					<p class = "descript_text">At Preserving SF, we strive to capture not only the flavor of our perfectly ripened fruits, but also the purity, love and care that went into every step of the process from...<span class= "green">&#40;more&#41;</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+<!-- line break -->
+<hr class= "full-width co_prod_divide"></hr>
+
+
+
+
+
+
+
+
+
+		<div class= "main_content product_list">
+
+			<p class= "prod_intro_text"><span id= "items">7 ITEMS</span><span id= "text_divide"> | </span> Drag to sort order</p>
+			<!-- still figuring out how to configure this heading -->	
+			<!-- also do I want to make sort by a dropdown? --> 			
+
+
+			<ul class= "sortable product_blocks">
+
+
+				<!-- **** Product1 -->
+				<div class= "block b1 column1"><li>
+					
+					<a class= "nowhere"  href= "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">DRAFT  <span class= "divider-space"></span></span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div><img src= "img/product1.png"><div class= "draft_sign">Draft</div>
+					</a>
+					<h3>Clementine Preserves</h5>
+					<h6>Preserving SF</h6>
+					<table class= "variant_list">
+						<tr>
+							<td class= "size"></td>
+							<td class= "draft">DRAFT</td>
+							<td class= "price">$18.00</td>
+						</tr>
+			
+					</table>
+				</li></div>
+
+
+
+
+				<!-- **** Product 2 -->
+				<div class= "block b2 column2"><li>
+
+					<a class= "nowhere"  href= "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">2 Live  <span class= "divider-space">|</span>  1 Draft</span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div><img src= "img/product2.jpg">
+					</a>
+
+					<h3>Springtime Blueberry...</h5>
+					<h6>Preserving SF</h6>
+
+					<table class= "variant_list">
+						<tr class= "v1">
+							<td class= "size">8 oz. jar</td>
+							<td class = "draft"></td>
+							<td class= "price">$12.00</td>
+						</tr>
+						<tr class= "v2">
+							<td class= "size">12 oz. jar</td>
+							<td class= "draft">DRAFT</td>
+							<td class= "price">$0.00</td>
+						</tr>
+						<tr class= "v3">
+							<td class= "size">16 oz. jar</td>
+							<td class= "draft"></td>
+							<td class= "price">$20.00</td>
+						</tr>
+					</table>
+				</li></div>
+
+
+				<!-- **** Product 3 -->
+				<div class= "block b3 column3"><li>
+
+					<a class= "nowhere"  href= "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">Live  <span class= "divider-space"></span></span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div>
+						<img src= "img/product3.jpg">
+					</a>
+
+					<h3>Raspberry Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<table class= "variant_list">
+						<tr class= "v1">
+							<td class= "size"></td>
+							<td class= "draft"></td>
+							<td class= "price">$10.00</td>
+						</tr>
+					</table>
+				</li></div>
+
+
+
+
+				<!-- **** Product 4 -->
+				<div class= "block b4 column1"><li>
+
+					<a class= "nowhere"  href= "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">2 Live  <span class= "divider-space">|</span>  1 Draft</span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div>
+						<img src= "img/product4.jpg">
+					</a>
+
+					<h3>Grape Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<table class= "variant_list">
+						<tr class= "v1">
+							<td class= "size">8 oz. jar</td>
+							<td class= "draft"></td>
+							<td class= "price">$12.00</td>
+						</tr>
+
+						<tr class= "v2">
+							<td class= "size">12 oz. jar</td>
+							<td class = "draft">DRAFT</td>
+							<td class= "price">$0.00</td>
+						</tr>
+				
+						<tr class= "v3">
+							<td class= "size">16 oz. jar</td>
+							<td class= "draft"></td>
+							<td class= "price">$20.00</td>
+						</tr>
+					</table>	
+				</li></div>
+
+
+
+				<!-- **** Product 5 -->
+				<div class= "block b5 column2"><li>
+
+					<a class= "nowhere"  href= "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">Draft  <span class= "divider-space"></span></span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div>
+						<img src= "img/product5.jpg">
+						<div class= "draft_sign">Draft</div>
+					</a>
+
+					<h3>Pomegranate Jam</h5>
+					<h6>Preserving SF</h6>
+
+					<table class= "variant_list">
+						<tr class= "v1">
+							<td class = "size"></td>
+							<td class= "draft">DRAFT</td>
+							<td class= "price">$12.00</td>
+						</tr>
+					</table>
+				</li></div>
+
+
+				<!-- **** Product 6 -->
+				<div class= "block b6 column3"><li>
+
+					<a class= "nowhere"  href = "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">1 Live  <span class= "divider-space">|</span>  1 Draft</span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div>
+						<img src= "img/product6.jpg">
+					</a>
+
+					<h3>Pineapple Preserves</h5>
+					<h6>Preserving SF</h6>
+
+					<table class= "variant_list">	
+						<tr class= "v1">
+							<td class= "size">8 oz. jar</td>
+							<td class= "draft">DRAFT</td>
+							<td class= "price">$0.00</td>
+						</tr>
+					
+
+						<tr class= "v2">
+							<td class= "size">12 oz. jar</td>
+							<td class = "draft"></td>
+							<td class= "price">$12.00</td>	
+						</tr>
+					</table>
+				</li></div>
+
+
+				<!-- **** Product 7 -->
+				<div class = "block b7 column1"><li>
+
+					<a class= "nowhere"  href= "#" target= "blank">
+						<div class="pic_overlay"><span class= "live-or-draft">Live  <span class= "divider-space"></span></span>Edit <br>or<br class= "xtra_space">+ Add Another Size</div>
+						<img src= "img/product7.png">
+					</a>
+
+					<h3>Table Water Crackers</h5>
+					<h6>Preserving SF</h6>
+
+					<table class= "variant_list">
+						<tr class= "variant_row_1">
+							<td class= "size"></td>
+							<td class= "draft"></td>
+							<td class= "price">$10.00</td>
+						</tr>
+					</table>
+				</li></div>
+
+
+
+				<!-- **** Add Product -->
+				<div class= "block bAdd column2"><li>
+					<a class= "nowhere"  href= "#" target = "blank"><div id= "add_prod_block"><div id= "add_prod_text" class= "HelveticaNeueMedium"><span id= "plus_sign">+<br></span>Add Product </div></div></a>
+				</li></div>
+
+			</ul> <!-- individual products -->
+
+			
+		</div> <!-- product container -->
+	
+	</div> <!-- main content -->
+
+
+
+
+
+<!-- * * * * * * * * * * * FIXED RIGHT PANEL* * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
+
+
+	<!-- NOTES::: 
+	have to add elemeent FAQ's/ Descriptions for hover/ click states	-->
+
+
+
+<div class= "full-width right-rail">
+
+
+<!-- ****Local Nav/ Checklist -->
+	<div class= "local_nav">
+		<h4>Your Products</h4>
+
+		<div id= "list_and_check">
+
+ 			<table class= "right_prod_list">
+				<tr><td><a class= "nowhere"  href= "#">Clementine Preserves</a></td><td></td></tr>
+				<tr><td><a class= "nowhere"  href= "#">Springtime Blueberry...</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a class= "nowhere"  href= "#">Raspberry Jam</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a class= "nowhere"  href= "#">Grape Jam</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a class= "nowhere"  href= "#">Pomegranate Jam</a></td><td class= "checkmarks"></td></tr>
+				<tr><td><a class= "nowhere"  href= "#">Pineapple Preserves</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a class= "nowhere"  href= "#">Table Water Crackers</a></td><td class= "checkmarks">&#10003;</td></tr>
+				<tr><td><a class= "nowhere"  href= "#"><span style="color: #127074"><strong> + Add Product</strong></span></a></td><td></td></tr>
+			</table>
+
+		</div>
+	</div>
+
+
+
+
+	<div class= "alert_box hide">
+		<img class= "alert_icon_pink.png" src= "img/alert_icon_pink.png">	
+		<p>Add or edit company photos, videos, links and general information on your company page <a class= "nowhere"  href= "#">here</a></p>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+	
+
+
+
+<!-- * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * * * * * * * * ** * * * * * * * * * * -->
+
+
+
+
+<div class= "full-width footer">
+		<div id= "green_bar"></div>
+		<div id= "dark_green_bar"></div>
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>

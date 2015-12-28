@@ -1,0 +1,1741 @@
+
+/* * * * * * * * * * * * * FONT * * * * * * * * * * * */
+
+
+html, body {
+    font-size: 16px;
+} 
+
+body {
+	 margin: 0;
+	 font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;}
+
+
+h1 {
+	/* Helvetica Neue Medium Font Stack */
+	font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:500; font-stretch:normal;
+	color: #333333;
+	font-size: 2.125em;
+}
+
+h2 {
+	font-family: "Memphis", sans-serif;
+	color: #1a1a1a;
+	font-size: 1.5em;
+	margin: 5px;
+}
+
+
+h3{
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+	font-size: 1.0625em;
+	color: #333;
+	padding: .35em 0 .2em .15em;
+	margin:0;
+
+}
+
+
+
+
+h5{ 
+	font-family: "Helvetica", "HelveticaNeueBold", "HelveticaNeue", "sans-serif";
+	font-weight: bold;
+	font-size: .625em;
+	text-transform: uppercase;
+}
+
+
+
+
+.num{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+h6{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+	color: #1a1a1a;
+	font-size: .875em;
+	margin: 3px;
+}
+
+
+.product_blocks h6{
+	color: #666666;
+	margin:0;
+	padding: 0.22em 0 0 .18em;
+} 
+
+
+
+
+p.descript_text{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-size: .8125em; /*13px*/
+  	line-height : 21px;
+  	letter-spacing : 0.04px;
+  	font-style: oblique;
+  	color: #4d4d4d;
+}
+
+span.green{
+	color: #84cdb6;
+}
+
+
+
+p.prod_intro_text{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-weight: normal;
+	font-size: .875em; /*(14px)*/
+	/*text-transform: uppercase;*/
+	color: #127074;
+	margin-left: 5%;
+
+}
+
+
+p.prod_intro_text #items{
+	font-weight: bold;
+}
+
+p.prod_intro_text #text_divide{
+	margin: 0 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.variant_list{
+	font-size: .875em;
+}
+
+td.size{
+	color: #4d4d4d;
+	font-weight: 500;	
+}
+
+td.draft{
+	color: #ec6766;
+}
+
+td.price{
+	color: #84cdb6;
+}
+
+
+
+.local_nav td{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+	line-height: 2.3em;
+	font-size: .8125em;
+	text-transform: uppercase;
+	color: #4d4d4d;
+
+
+}
+
+@media (max-width: 1180px){
+	.local_nav td{
+		font-size: .75em ;
+	}
+}
+
+@media (max-width: 975px){
+	.local_nav td{
+		font-size: .8125em ;
+	}
+}
+
+
+
+
+
+
+.draft_sign{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;
+	color: #4d4d4d;
+	font-size: 1.1875em;
+	text-align: center;	
+	text-transform: uppercase;
+}
+
+
+/* Helvetica Neue Regular Font Stack */
+.HelveticaNeue{
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;}
+
+
+/* Helvetica Neue Medium Font Stack */
+.HelveticaNeueMedium{
+	font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:500; font-stretch:normal;}
+
+/* Helvetica Neue Bold Font Stack */
+.HelveticaNeueBold{
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:600; font-stretch:normal;}
+
+
+
+
+
+
+/* * * * * * * * * * * * * GRID* * * * * * * * * * * * */ 
+
+.hide{
+	display:none;
+}
+
+
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+/*	border: 1px solid purple;*/
+}
+
+.full-width {
+	width: 100%;
+	/*border: 2px solid red;*/
+}
+
+.left-rail {
+	width: 77%;
+	float: left;
+	/*border: 2px solid red;*/
+	background-color: #f4f7f8;
+
+}
+
+/*.right-rail {
+	margin: 0;
+	padding:0;
+	width: 22%;
+	float: right;
+
+
+}*/
+
+
+
+.right-rail{
+	position: absolute;
+	margin-left: 78%;
+	width: 21%;
+	margin-top: 4em;
+
+}
+
+.fixed_scroll{
+	position: fixed;
+	margin-top:-23.5em;
+}
+
+@media (max-width: 1100px){
+	.right-rail{
+		margin-left: 77%;
+		width: 23%; ;
+	}
+}
+
+
+
+
+
+
+
+.main_content{
+	width: 75%;
+	margin:0;
+	padding:0;
+	margin-left: 14%;
+	margin-right: 11%;
+	display: inline-block;
+/*	border: 1px solid red;*/
+
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * */ 
+
+
+
+
+/* 
+.....
+.......
+........
+Header!
+........
+.....
+....
+*/
+
+
+
+
+
+/***************** NAV******************/
+
+
+.top_nav{
+	background-color: white;
+	color : #127074;
+	padding-bottom: 3em;
+}
+
+
+.top_nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+
+
+.top_nav li{
+	display: inline-block;
+	font-size: 14px;
+
+}
+
+
+
+.top_nav li a{
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	color: #127074; 
+
+/*	border: 1px solid black;*/
+}
+
+#User li{
+	position: absolute;
+	color: #127074; 
+	font-size: 14px;
+	margin-top: 5px;
+
+}
+
+
+ul#menu{
+	background: none;
+	border: 1px #c8e9de;
+}
+
+
+
+
+
+
+/*visited link*/
+.top_nav li a:visited {
+	color: #127074; ;
+}
+
+/* mouse over link */
+.top_nav li a:hover {
+    text-decoration: underline;
+}
+
+#User a:hover{
+	text-decoration: none;
+}
+
+
+
+
+
+
+.fa-caret-down{
+	margin-left: 4px;
+}
+
+
+
+.top_nav ul.nav_row{
+/*	border: 1px solid orange;*/
+	position: relative;
+	margin-top: 2em;
+}
+
+
+
+
+
+.top_nav li.right_nav{
+	float: right;
+}
+
+
+
+#Dash_btn a{
+	font-size : 16px;
+  	line-height : 20.1px;
+	color : #EC6766;
+  	border: 1px solid #EC6766;
+  	margin-right: 2.5em;
+  
+}
+
+/* mouse over link */
+#Dash_btn a:hover{ 
+	text-decoration: none;
+	background-color: #EC6766;
+	color: #fff;	
+}
+
+
+
+
+#Orders_btn a{
+/*	font-size : 16px;*/
+  	line-height : 20.1px;
+	color : #127074;
+  	border: 1px solid #127074;
+  	padding: .35em 1em;
+}
+
+
+/* mouse over link */
+#Orders_btn a:hover{ 
+	text-decoration: none;
+	background-color: #127074;
+	color: #fff;	
+}
+
+
+
+
+
+#User{
+	font-size: 14px;
+	margin-left: 2.5em;
+}
+
+
+
+
+#FE_logo {
+	width: 93px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2.375em;
+}
+
+
+hr { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #127074;
+
+}
+
+
+/** MEDIA QUERY**/
+
+@media (max-width: 600px){
+
+	ul.nav_row{
+		width: 100%;
+	}
+
+	ul.nav_row li a{
+		display: inline-block;
+	}
+
+	#Dash_btn a{
+		margin: 0;
+		margin-right: 1.95em;
+		border: none;
+		padding:0;
+	}
+	#Dash_btn a:hover{
+		background-color:white;
+		color: #EC6766;
+		text-decoration: underline;
+	}
+
+	#Orders_btn a{
+		border:none;
+		padding:0;
+	}
+	#Orders_btn a:hover{
+		background-color:white;
+		color: #127074;
+		text-decoration: underline;
+	}
+
+	li#User{
+		margin: 0;
+		margin-left: 1.95em;
+	}
+
+	#FE_logo {
+		margin: 1.3em auto -.5em auto;
+	}
+}
+
+
+
+
+/** Media Query End **/
+
+
+
+
+/****************** Header Text***************/
+
+#title_text{
+	width:100%;
+	text-align: center;
+	margin-top: 3.25em;
+	margin-bottom: 3.725em;
+}
+
+.Step2 {
+	color: #127074;
+}
+
+p#title_subtext{
+	margin:0;
+	margin-top: 1.5em;
+	font-size: 1.125em; /*(of 1em=16px)*/
+	color: #EC6766;
+}
+
+
+
+/****************** Progress Bar ***************/
+
+
+.progress_bar ul{
+	margin:0;
+	width: 100%;
+	padding: 0;
+}
+
+.nav_tab{
+	list-style-type: none;
+	width: 25%;
+	float:left;
+}
+
+.nav_tab a{
+	font-size: 1.5em; /*(of 1em = 24px)*/
+	text-decoration: none;
+	color: #127074;
+	display: inline-block;
+	width: 100%;
+	line-height: 3.3em; /*(of 1em = 24px; 3.3em= 80px)*/
+	text-align: center;
+	text-indent: .7em;
+	background-color: #84cdb6;
+	border: .1em solid white;
+	
+	}
+
+
+.Company a{
+	background-color: #127074;
+	color: white;
+}
+
+
+.Products_tab a{
+	color: white;
+	font-weight: bold;
+	font-size: 1.875em; /*(of 1em = 16px; 1.875em= 30px)*/
+	line-height: 2.66666em; /*(of 1em = 30px; 2.66em= 80px)*/
+	border: .08em solid white;
+	text-indent: 1.5em;
+	background-color: #127074;
+}
+
+	.Products_tab::after{
+		border-left: 2.54em solid #127074;
+
+
+	}
+
+
+.Users a{
+	text-indent: 2em;
+}
+
+
+.incomplete.nav_tab a{
+	background-color: #84cdb6;
+}
+
+.nav_tab.completed::after, 
+.nav_tab.Users::after {
+
+  	content: "";
+	position: absolute;
+	margin-left: 25%;
+	margin-top: -5.065em;
+  	width: 0;
+	height: 0;
+	border-top: 2.5em solid transparent;
+	border-left: 2.9em solid #127074;
+	border-bottom: 2.5em solid transparent;
+
+}
+
+
+.nav_tab.completed::before,
+.nav_tab.Users::before {
+
+  	content: "";
+	position: absolute;
+	margin-left: 25%;
+	margin-top: -0.065em;
+  	width: 0;
+	height: 0;
+	border-top: 2.7em solid transparent;
+	border-left: 3.2em solid white;
+	border-bottom: 2.7em solid transparent;
+
+}
+
+
+.nav_tab.Users::after {
+	border-left: 2.9em solid #84cdb6;
+}
+
+
+
+/*hover states*/
+.nav_tab a:hover {
+	font-weight: bold;
+	font-size: 1.52em; /*(of 1em = 16px; 1.56em= 25px)*/
+	line-height: 3.25em; /*(of 1em = 25px; 3.25em= 80px)*/
+	border: .096em solid white; /*add border width to compensate size*/
+}
+
+
+
+/*
+keeps product tab static*/
+.Products_tab a:hover{
+	color: white;
+	font-weight: bold;
+	font-size: 1.875em; /*(of 1em = 16px; 1.875em= 30px)*/
+	line-height: 2.66666em; /*(of 1em = 30px; 2.66em= 80px)*/
+	border: .08em solid white;
+	text-indent: 1.5em;
+}
+
+
+
+
+
+/***************/
+
+/** Progress bar MEDIA QUERIES**/
+
+@media (max-width: 1050px){
+
+	.nav_tab a{
+		font-size: 1.25em; /*(of 1em = 16px;  1.25em = 20px)*/
+		line-height: 3.1em; /*(of 1em = 20px; 3.1em= 62px)*/
+		text-indent: .7em;
+		border: .1em solid white; /*(at 12m= 20px; .1em= 2px)*/
+	}
+
+
+	.Products_tab a{
+		color: white;
+		font-weight: bold;
+		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
+		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
+		border: .08em solid white; /*(of 1em=25px; .08em=2px)*/
+		text-indent: 1.8em;
+	}
+
+
+
+
+
+
+
+	.Users a{
+		text-indent: 2em;
+	}
+
+
+	.incomplete.nav_tab a{
+		background-color: #84cdb6;
+	}
+
+	.nav_tab.completed::after, 
+	.nav_tab.Users::after {
+
+	  	content: "";
+		position: absolute;
+		margin-left: 25%;
+		margin-top: -4em;  /*at 1em=16px; -3.975em= 64px (62 px then add 2px border)*/
+	  	width: 0;
+		height: 0;
+		border-top: 1.95em solid transparent;
+		border-left: 2.54em solid #127074;
+		border-bottom: 1.95em solid transparent;
+
+	}
+
+
+
+	.nav_tab.Users::after {
+		border-left: 2.54em solid #84cdb6;
+	}
+
+	.nav_tab.completed::before,
+	.nav_tab.Users::before {
+
+	  	content: "";
+		position: absolute;
+		margin-left: 25%;
+		margin-top: -0.065em;
+	  	width: 0;
+		height: 0;
+		border-top: 2.15em solid transparent;
+		border-left: 2.74em solid white;
+		border-bottom: 2.15em solid transparent;
+
+	}
+
+	/*hover states*/
+	.nav_tab a:hover {
+		font-weight: bold;
+		font-size: 1.25em; /*keep font-size and line height the same as non-hover*/
+		line-height: 3.1em; 
+		border: .106em solid white; /*add some border to compensate size*/
+	}
+
+
+
+	/*
+	keeps product tab static*/
+	.Products_tab a:hover{
+		color: #127074;
+		font-weight: bold;
+		font-size: 1.5625em; /*(of 1em = 16px; 1.5625em= 25px )*/
+		line-height: 2.48em; /*(of 1em = 25px; 2.66em= 62px)*/
+		border: .08em solid white; /*(of 1em=25px; .08em=2px)*/
+		text-indent: 1.8em;
+	}
+
+
+}
+
+
+
+
+
+
+/*getting rid of borders*/
+@media (max-width: 700px){
+	.nav_tab.completed::after, 
+	.nav_tab.Users::after {
+		
+		margin-top: -3.24em;  
+
+		border-top: 1.6244em solid transparent;
+		border-left: 1.2em solid #127074;
+		border-bottom: 1.62435em solid transparent;
+	
+	}
+
+	.nav_tab.Users::after{
+		border-left: 1.2em solid #84cdb6;
+	}
+
+
+
+
+	.nav_tab.completed::before,
+	.nav_tab.Users::before {
+		border-left: 0;
+	}
+
+
+	.nav_tab a{
+		text-indent:0.9em;
+		font-size: 1em;
+		
+	}
+
+	
+
+
+	.Users a{
+		text-indent: 1.4em;
+	}
+
+
+	.Users a, 
+	.Payment a{
+		border-color: #c8e9de;
+	}
+
+	.Company a{
+		border-color: #84cdb6;
+	}
+
+	.Products_tab a{
+		line-height: 3.1em;	/*keeping the same font size as all just bolded and outlined*/
+		border-color: #84cdb6;
+	}
+
+
+
+
+	/*hover states*/
+	.nav_tab a:hover {
+		font-size: 1em;
+
+		line-height: 3.1em;	/*keeping the same font size as all just bolded and outlined*/
+	
+
+	}
+
+
+	.Users a:hover, 
+	.Payment a:hover{
+		border-color: #c8e9de;
+	}
+
+	.Company a:hover{ 
+		border-color: #84cdb6;}
+
+	/*
+	keeps product tab static*/
+	.Products_tab a:hover{
+		text-indent: .9em;
+		border-color: #84cdb6;
+		color: white;
+	}
+
+
+
+
+}
+
+
+
+/** Media Queries End **/
+/******************
+*/
+
+
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- left rail-- Company Info Top Portion! 
+........
+.....
+....
+*/
+
+
+
+
+
+/***************** Company Info Top portion ******************/
+
+.company_info{
+	width: 103%;
+	display: block;
+	float: left;
+	padding-bottom: 2em;
+	margin-left: 4.1%;
+	/*border: 2px solid blue;*/
+}
+
+
+/*******MEDIA QUERIES TABLET*********/
+
+@media (max-width: 900px){
+	.left-rail{
+		width:100%;
+	}
+
+	.main_content{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+	.company_info{
+		width: 112%;
+		margin-left: -5%;
+	}
+}
+/************END MEDIA QUERIES*******/
+
+
+
+
+/*
+********in container- main content**********/
+
+
+
+
+
+.logo_and_social{
+	width: 9.375em; /*( or 150px -----at 1 em= 16px)*/
+	float: left;
+	position: relative;
+}
+
+
+#preserving_sf_logo{
+	width: 100%;
+	margin-top: -4.6875em; /*(-75px at 1em=16px)*/
+	margin-bottom: .4em;
+}
+
+
+.social_row ul{
+	width: 80%;
+	padding: 0; 
+	overflow:auto;
+	margin: auto;
+
+}
+.social_row ul li{
+	list-style-type: none;
+	margin: 4px;
+	float: left;
+}
+
+
+
+.social_row ul li a{
+	text-align: center;
+	display: block;
+
+}
+
+
+.social_row img{
+	width: 2em; /*(32px at 1 em =16px)*/
+}
+
+
+
+
+.co_name_location{
+	display: block;
+	float: left;
+	margin: .5em 1em 0 1.2em;
+	color: #333;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.prod_gall_descript{
+	width: 53%;
+	margin-top: -1.8em;
+	margin-left: 2.2em;
+	display: block;
+	float: right;
+}
+
+
+.prod_gall_tabs ul{
+	width: 60%;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	margin-left: 0;
+}
+
+.prod_gall_tabs ul li{
+	display: inline-block;
+	line-height: 1.25em; /*20px if 1em=16px*/
+	color: #333333;	
+
+}
+
+.prod_tab{
+	margin-right: 4em;
+}
+
+
+.underline_green{
+	border: 2px solid #84cdb6;
+	line-height: 0em;
+	margin-top: -.8em;
+	width: 150%;
+	margin-left: -25%;
+}
+
+
+.underline_grey{
+	border: 2px solid #CCCCCC;
+	line-height: 0em;
+	margin-top:-.8em;
+	width: 120%;
+	margin-left: -10%;
+
+}
+
+
+
+
+
+
+/***************/
+
+/** Co Info MEDIA QUERIES**/
+
+@media (min-width: 1400px){
+
+
+	.prod_gall_descript{
+		width: 53%;
+		margin-top: 2em;
+		margin-left: 2em;
+
+	}
+
+}
+
+
+
+
+@media (max-width: 1150px){
+
+
+
+	.prod_gall_tabs ul{
+		float: right;
+		width: 100%;
+		padding-right: 3em;
+		text-align: right;
+	}
+
+	.prod_gall_descript{
+		width: 65%;
+		float: right;	
+		margin-top: -1.8em;
+	}
+
+
+	.prod_tab .num{
+		margin-right: 1.55em;
+
+	}
+
+	.gall_tab .num{
+		margin-right: 2.6em;
+	}
+}
+
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media (max-width: 900px){
+
+	.prod_gall_descript{
+		width: 53%;
+		margin-top: -2em;
+		margin-left: 2.2em;
+
+	}
+
+
+	.prod_gall_tabs ul{
+		width: 60%;
+		padding: 0;
+		float:none;
+	}
+
+
+}
+
+
+
+
+@media (max-width: 780px){
+
+
+
+	.prod_gall_tabs ul{
+		width: 90%;
+		float:none;
+		text-align: right;
+	}
+
+	.prod_gall_descript{
+		width: 65%;
+		float: right;	
+		margin-top: -1.8em;
+	}
+
+	.prod_tab{
+		margin-right: 2.5em;
+	}
+
+	.prod_tab .num{
+		margin-right: 1.55em;
+
+	}
+
+	.gall_tab .num{
+		margin-right: 2.6em;
+	}
+
+}
+
+
+
+@media (max-width: 590px){
+
+	.prod_gall_tabs{
+		display:none;
+	}
+
+	.prod_gall_descript{
+		margin-top: 0em;
+		width: 95%;
+		margin:auto;
+	}
+
+}
+
+
+/** END OF Co. Info MEDIA QUERIES**/
+
+
+
+
+/*************END OF LEFT RAIL CO INFO ***************/
+
+
+
+
+
+
+
+hr.co_prod_divide{
+	border: 3px solid #e6e6e6;
+
+}
+
+
+
+
+
+
+
+
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- left rail-- Products and Product Add ****************
+........
+.....
+....
+*/
+
+
+
+
+
+/***************** Product List/ Product Add ******************/
+
+
+
+
+
+
+.product_list{
+	display: inline-block;
+	padding-top: 3em; /*(48px)*/
+/*	border: 2px solid green;*/
+	padding-bottom: 4em;
+	width: 89%;
+	margin-left: 5.5%;
+
+
+}
+
+ul.product_blocks{
+	padding:0;
+	margin:0;
+	padding-top: 4.25em; /*68px*/
+	list-style-type: none;
+	width: 100%;
+
+	
+}
+
+.product_blocks li{
+/*	border: 2px solid red;*/
+	height: 23.8em;
+	width: 13.2em;
+	float: none;
+	margin: auto;
+
+
+
+}
+
+.product_blocks a{
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+	text-decoration: none;
+	color: #4d4d4d;
+/*	border: 2px solid blue;*/
+
+
+}
+
+.product_blocks a:visited{
+	text-decoration: none;
+	color: #4d4d4d;
+}	
+
+
+.product_blocks img{
+	width: 210px;
+	margin: 0 auto;
+/*	border: 1px solid orange;*/
+	display: block;
+}
+
+
+
+#add_prod_block{
+	width:210px;
+	height: 210px;
+	margin: 0 auto;
+	display: block;
+	background-color: #c8e9de;
+	border: 2px solid #127074;
+
+}
+
+
+#add_prod_text{
+	font-size: 28px;
+	text-align: center;
+	line-height: 48px;
+	color: #127074;
+	padding-top: 18px;
+
+}
+
+#plus_sign{
+	font-size: 69px;
+	padding-left: 2px;
+	margin-bottom: 20px;
+	line-height: 100px;
+
+}
+
+
+
+
+.draft_sign{
+	width: 211px;
+	line-height: 3.07em; /*at 1em = 19px; so 3.05em = 58px*/
+	margin-top: -3em;
+	background-color: rgba(255,255,255,.7);
+	position: absolute;
+}
+
+
+
+
+div.block{
+	margin-bottom: 4em;
+	padding:0;
+	width: 33%;
+	display: block;
+	float:left;
+/*	border: 1px solid black;*/
+}
+
+
+
+
+.pic_overlay{
+	background-color: rgba(255,255,255,.8);
+/*	background-color: rgba(0, 0, 0, .7);*/
+	text-align: center;
+	height: 211px;
+	width: 211px;
+	position: absolute;
+	line-height: 1.8em;
+	font-size: 1.25em;
+	font-weight: 600;
+	opacity: 0;
+	margin-top: -10px;
+
+
+}
+
+
+.xtra_space{
+	line-height: 2;
+}
+
+
+.live-or-draft{
+	color: #EC6766;
+	text-align: left;
+	display: block;
+	margin: 0 0 1em 1.2em;
+	text-transform: uppercase;
+/*	font-family: "Helvetica";*/
+	font-size: .7em;
+	font-weight: 500;
+}
+
+.divider-space{
+	margin: 0 .5em;
+}
+
+
+
+
+
+
+
+/* variant tables stuff*/
+
+table.variant_list{
+	margin-top: 1.1em;
+	padding: 0;
+	width: 114%;
+/*	border: 1px solid orange;*/
+}
+
+table.variant_list td{
+	width: 4.625em;
+	height: 2em;
+}
+
+
+
+
+
+
+td.draft{
+	padding-left: .25em;
+}
+
+.block1 td.draft,
+.block5 td.draft{
+	padding-left: 0;
+}
+
+
+
+
+
+
+/*******MEDIA QUERIES*********/
+@media (min-width: 900px) and (max-width: 1180px){
+	
+
+	p.prod_intro_text{
+		margin-left: 10%;
+	}
+
+
+	div.block{
+		width:50%;
+	}
+
+
+	.product_list{
+		margin-left: 4%;
+	}
+
+
+}
+
+
+
+
+@media (max-width: 900px){
+	.product_list{
+/*		border: 1px solid black;*/
+		width: 90%;
+		margin-left: 3.5%;
+
+		}
+
+
+
+		p.prod_intro_text{
+			margin-left: 5%;
+		}
+}
+
+@media (max-width: 770px){
+
+	p.prod_intro_text{
+		margin-left: 10%;
+	}
+
+
+	div.block{
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 550px){
+
+
+	p.prod_intro_text{
+		margin-left: 24%;
+
+	}
+
+
+
+	div.block{
+		width:100%;
+	}
+
+
+	.b1 li,
+	.b3 li,
+	.b5 li,
+	.b7 li{
+		height: 19.5em;
+	}
+
+
+	.b6 li{
+		height: 21em;
+	}
+
+	.b2 li
+	.b4 li{
+		height: 22em;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- right rail ****************
+........
+.....
+....
+*/
+
+
+/***************** Local Nav ******************/
+
+.local_nav{
+	display: inline-block;
+	width: 100%;
+	margin: 1.5em 0  4em 0;
+}
+
+.local_nav h4{
+	margin:2.6em 0 1em 0;
+	padding:0;
+	color: #127074;
+	text-align: center;
+
+}
+
+#list_and_check{
+/*	border: 1px solid black;*/
+	float: left;
+	width: 90%;
+	margin-left: 10%;
+}
+
+
+
+.button_hide{
+	opacity: 0;
+}
+
+
+table.right_prod_list{
+	width: 100%;
+}
+
+
+table.right_prod_list a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+.right_prod_list td{
+	width: 85%;
+/*	border: 1px solid red;*/
+}
+
+td.checkmarks{
+	color: #127074;
+	width: 15%;
+}
+
+
+
+.alert_box{
+	width: 76%;
+/*	height:20em;*/
+	border: 1px solid #ec6766;
+	margin: .5em 12% 0 12%; 
+}
+
+
+
+
+
+
+.alert_box img{
+	display: block;
+	width: 45px;
+
+/*	border: 1px solid #127074;*/
+	border-radius: 50%;
+	padding: .7em;
+	margin: -40px auto 0 auto;
+	background-color: white;
+
+
+}
+
+
+.alert_box p{
+	text-align: center;
+	padding: 0 1em;
+	color: #4d4d4d;
+	font-size: .9375em;
+	line-height: 1.5em;
+	padding-bottom: 1em;
+
+
+
+}
+
+
+
+
+
+/***************** Right-rail button ******************/
+
+
+
+
+
+
+
+
+/*******MEDIA QUERIES*********/
+
+@media (max-width:900px){
+
+
+	
+	.local_nav{
+		padding: 0;
+		margin:0;
+		margin-bottom: 2em;
+	}
+
+	#local_nav_button h4{
+		padding: 0;
+		margin:0;
+		font-size: 85%;
+
+	}
+
+
+	.button_hide{
+		opacity: 1;
+	}
+
+	h4{ 
+		margin: 0;
+		padding: 0;
+	}
+
+
+	table.right_prod_list a{
+		color: #000;
+	}
+
+	.fixed_scroll{
+		margin-top: -18.5em;
+	}
+
+	.right-rail{
+		margin-left: 0%;
+		/*background-color: rgba(132, 205, 182, .75);*/
+		background-color: rgba(255, 255, 255, .9);
+		padding:0;
+		width: 100%;
+		visibility: hidden;
+
+	}
+
+	#list_and_check{
+		width: 50%;
+		margin-left:25%;
+	/*	background-color: rgba(255, 255, 255, .6);*/
+	}
+
+
+	#local_nav_button{
+		line-height: 2em;
+		width: 6.5em ;
+		border: 1px solid #127074;
+		background-color: rgba(255, 255, 255, .5);
+		margin-left: 75%;
+		margin-top: 1.5em;
+		position: absolute;
+		color: #127074;
+		text-align: center;
+
+
+	}
+
+
+}
+
+
+
+@media (max-width:500px){
+	#local_nav_button{
+		display:none;
+	}
+}
+
+
+
+
+/*******END MEDIA QUERIES*********/
+
+
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+footer ****************
+........
+.....
+....
+*/
+
+
+div.footer{
+	display:inline-block;
+}
+
+
+
+div#green_bar{
+	height: 8em;
+	/*background-color: #84cdb6;*/
+	background-color: #127074;
+	clear: both;
+
+}
+
+div#dark_green_bar{
+	height: .8em;
+	background-color: #127074;
+}
+
+
+
+
+
+
+
+

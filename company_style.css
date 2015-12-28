@@ -1,0 +1,252 @@
+
+/****************** Progress Bar ***************/
+
+/*
+Products_tab now refers to just the current page.
+In this case, Products_tab is now assigned to 
+the tab labeled "Company". Company is now
+assigned to the tab labeled "Products"*/
+
+.Products_tab a,
+.Products_tab a:hover{
+	text-indent: 0;
+
+}
+
+
+.Company a{
+	background-color: #c8e9de;
+	text-indent: 2em ;
+}
+
+.nav_tab.Company::after{
+	border-left: 2.54em solid #c8e9de;  
+}
+
+.nav_tab.Company::before{
+	border-left: 2.74em solid white;
+}
+
+
+
+/** Progress bar MEDIA QUERIES**/
+
+@media (max-width: 700px){
+	.Company a,
+	.Company a:hover{
+		border-color: #c8e9de;
+	}
+
+	.nav_tab.Company::before {
+		border-left: 0;
+	}
+}
+/** Media Queries End **/
+
+
+
+
+/****************** Main Content - Company Info ***************/
+
+
+#banner_photo{
+	position: static;
+
+
+}
+
+
+
+.banner_overlay{
+	background-color: rgba(255,255,255,.85);
+	position: absolute;
+	width: 77%;
+	text-align: center;
+	font-size: 24px;
+	color: #127074;
+	font-weight: 600;
+	opacity:0;
+}
+
+
+
+
+/** Banner Media Queries! **/
+
+@media (max-width: 900px){
+	.banner_overlay{
+		width: 100%;
+	}
+}
+
+/** Media Queries End **/
+
+
+
+
+
+
+.fa-camera{
+	color: #127074;
+	margin: 0 1em 0 0;
+}
+
+
+p.descript_text{
+	font-family: "Helvetica", "HelveticaNeue", "sans-serif";
+	font-size: .875em; /*14px*/
+  	line-height : 25px;
+  	padding: 2em 2em 4em 2em;
+
+}
+
+
+#description{
+	margin-top: 1em;
+	margin-left: -3em;
+
+}
+
+#description:hover{
+	box-shadow: 0px 0px 2px 2px #84cdb6;
+}
+
+
+.fa-pencil{
+	color: #127074;
+	float: right;
+	margin-top: -3.5em;
+	margin-right: 1.8em;
+
+}
+
+
+
+#logo{
+/*	border: 3px solid black;*/
+	/*height: 142px;
+	margin-top: -75px;*/
+	display: inline-block;
+	
+}
+
+
+
+.logo_overlay{
+	background-color: rgba(255,255,255,.8);
+	position: absolute;
+	width: 150px;
+	height: 148px;
+	margin-top: -75px;
+	text-align: center;
+	font-size: 24px;
+	color: #127074;
+	font-weight: 600;
+	opacity:0;
+
+}
+
+
+#logo .fa-camera{
+	margin:1.85em 0 .3em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/** Description tab media Queries**/
+
+@media (min-width: 901px) and (max-width: 1150px){
+
+
+	.prod_gall_tabs{
+		display: inline-block;
+	}
+
+	.prod_gall_tabs{
+		float: right;
+	}
+
+	#description{
+		display: inline-block;
+		margin-top: -0.5em;
+	}
+}
+
+
+/** End media Queries**/
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************/
+
+
+/* 
+.....
+.......
+........
+content- right rail ****************
+........
+.....
+....
+*/
+
+
+/***************** Local Nav ******************/
+
+#list_and_check{
+	width: 74%;
+	margin-left: 15%;
+}
+
+
+.local_nav h4{
+	margin-bottom: 1.2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	line-height: 1.5em;
+
+}
+
+
+
+@media (max-width:900px){
+	#list_and_check{
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
